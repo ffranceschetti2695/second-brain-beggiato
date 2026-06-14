@@ -1,0 +1,14 @@
+# Obsidian — file di stato locale (cambiano ad ogni sessione, non versionare)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# Il resto di .obsidian VA versionato (grafo, temi, plugin, configurazioni)
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
