@@ -1,3 +1,6 @@
+# Segreti — mai versionare
+.env
+
 # Obsidian — file di stato locale (cambiano ad ogni sessione, non versionare)
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
