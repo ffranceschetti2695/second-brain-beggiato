@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Aurora Cervello — Generatore llms.txt
+Personal Brain — Generatore llms.txt
 Legge i frontmatter di tutte le note atomiche del vault e riscrive llms.txt da zero.
 Usage: python3 generate_llms.py
 """
@@ -31,7 +31,7 @@ def get_frontmatter(path):
 
 def main():
     lines = [
-        "# Aurora Cervello — llms.txt",
+        "# Personal Brain — llms.txt",
         "# Indice-porta per AI. DERIVATO: non modificare a mano.",
         "# Rigenera con: python3 generate_llms.py",
         "# Fonte: frontmatter (title + summary) di ogni nota atomica del vault.",

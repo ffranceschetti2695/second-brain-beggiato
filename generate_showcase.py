@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Aurora Cervello — Generatore showcase.md
-Fotografia del vault per demo. DERIVATO: rigenera con python3 generate_showcase.py
+Personal Brain — Generatore showcase.md
+Fotografia del vault. DERIVATO: rigenera con python3 generate_showcase.py
 """
 
 import os
@@ -110,16 +110,16 @@ def main():
 
     out = []
     out.append("---")
-    out.append("title: Aurora Cervello — Showcase")
-    out.append(f'summary: "Fotografia del vault Aurora Sistemi al {today}: {total_notes} note, {total_links} wikilink, {components} componente connessa."')
+    out.append("title: Personal Brain — Showcase")
+    out.append(f'summary: "Fotografia del vault Personal Brain al {today}: {total_notes} note, {total_links} wikilink, {components} componente connessa."')
     out.append("tags: [self, showcase, demo]")
     out.append("status: active")
     out.append(f"created: {today}")
     out.append(f"updated: {today}")
-    out.append('related: ["[[self-identita-aurora]]", "[[index-self]]"]')
+    out.append('related: ["[[self-franceschetti]]", "[[index-self]]"]')
     out.append("---")
     out.append("")
-    out.append("# Aurora Cervello — Showcase")
+    out.append("# Personal Brain — Showcase")
     out.append("")
     out.append(f"> Fotografia generata il **{today}**. DERIVATA: rigenera con `python3 generate_showcase.py`.")
     out.append("")

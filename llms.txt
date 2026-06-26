@@ -1,4 +1,4 @@
-# Aurora Cervello — llms.txt
+# Personal Brain — llms.txt
 # Indice-porta per AI. DERIVATO: non modificare a mano.
 # Rigenera con: python3 generate_llms.py
 # Fonte: frontmatter (title + summary) di ogni nota atomica del vault.
@@ -58,6 +58,7 @@
 - [[entity-stuart]] — Azienda B2B di last-mile delivery in cui Francesco lavora come FP&A Lead Manager dal settembre 2025.
 - [[entity-tongji-university]] — Università cinese dove Francesco ha completato il Double Degree in Sustainable Development con GPA 4.0, e partecipato all'Asia-Pacific Leadership Program dell'ONU.
 - [[entity-universita-pisa]] — Università dove Francesco ha conseguito la laurea triennale in Ingegneria Gestionale con voto 105/110.
+- [[entity-xcelbespoke]] — Fornitore UK che gestisce il negozio WooCommerce per le divise dei corrieri Stuart: pick/pack/delivery a £7.15 per articolo, con contratto da rinegoziare per una discrepanza strutturale.
 - [[index-entities]] — Catalogo di persone, aziende e strumenti rilevanti nella vita professionale e personale.
 - [[persona-anthony-espie]] — VP Operations Finance di Stuart.
 - [[persona-dimitrij-phoursa]] — Interim CEO di Stuart. Sponsor ExCo della France Task Force.

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Aurora Cervello — Quality Gate
+Personal Brain — Quality Gate
 Audits all atomic notes against 6 rules.
 Usage: python quality_gate.py
 """
@@ -11,7 +11,7 @@ import sys
 from collections import defaultdict, deque
 
 VAULT = os.path.dirname(os.path.abspath(__file__))
-AUDIT_SKIP = {"sources", "workspace"}
+AUDIT_SKIP = {"sources", "workspace", "_showcase"}
 REQUIRED_FM_FIELDS = {"title", "summary", "tags", "status", "created", "updated"}
 
 
