@@ -1,16 +1,18 @@
 ---
 title: Indice — Projects
-summary: Progetti strategici attivi di Aurora Sistemi con stato e owner.
+summary: Progetti attivi con stato e obiettivi.
 tags: [projects, index]
 status: active
 created: 2026-06-14
-updated: 2026-06-14
-related: ["[[index-self]]", "[[progetto-auroradata-v2]]", "[[progetto-acquisizione-propertyos]]"]
+updated: 2026-06-17
+related: ["[[index-self]]"]
 ---
 
 # Indice — Projects
 
-Progetti strategici in corso di Aurora Sistemi.
+Progetti attivi.
 
-- [[progetto-auroradata-v2]] — Lancio AuroraData 2.0 con benchmark peer (dicembre 2025)
-- [[progetto-acquisizione-propertyos]] — Due diligence per acquisizione PropertyOS Srl (Bologna, ~€3M ARR)
+## Attivi
+
+- [[progetto-company-brain]] — Costruire e vendere company brain aziendali. Roadmap verso il primo cliente pilota.
+- [[progetto-france-task-force]] — Task force cross-funzionale per risolvere la sottoperformance della Francia su volume, RPO e CPO.

@@ -1,16 +1,17 @@
 ---
 title: Indice — Docs
-summary: Procedure operative, listini e documentazione interna di Aurora Sistemi.
+summary: Documenti di riferimento, procedure e note operative personali.
 tags: [docs, index]
 status: active
 created: 2026-06-14
-updated: 2026-06-14
-related: ["[[index-self]]", "[[doc-procedura-onboarding]]", "[[doc-prezzi-piani]]"]
+updated: 2026-06-25
+related: ["[[index-self]]"]
 ---
 
 # Indice — Docs
 
-Documentazione operativa e commerciale di Aurora Sistemi.
+Documenti di riferimento e procedure operative.
 
-- [[doc-procedura-onboarding]] — Procedura onboarding clienti: fasi, tempi, responsabilità
-- [[doc-prezzi-piani]] — Listino prezzi e piani commerciali: Starter, Business, Enterprise
+- [[doc-modelli-monetizzazione-ai]] — I 3 modelli per fare business con l'AI (formazione, retainer, prodottizzazione) con confronto e principi trasversali
+- [[doc-dwh-finance-schema]] — Schema delle tabelle DWH finance Stuart: colonne chiave, join, conversione FX
+- [[doc-flusso-performance-mensile]] — Procedura ripetibile per i bridge Actual vs FC3 mensili

@@ -1,15 +1,15 @@
 ---
 title: Indice — Code
-summary: Moduli tecnici e componenti software sviluppati internamente da Aurora Sistemi.
+summary: Snippet, script e moduli tecnici personali.
 tags: [code, index]
 status: active
 created: 2026-06-14
-updated: 2026-06-14
-related: ["[[index-self]]", "[[code-modulo-ai-morosita]]"]
+updated: 2026-06-25
+related: ["[[index-self]]"]
 ---
 
 # Indice — Code
 
-Moduli tecnici interni di Aurora Sistemi.
+Snippet, script e moduli tecnici.
 
-- [[code-modulo-ai-morosita]] — Modulo AI per previsione morosità integrato in AuroraGest (in produzione da gennaio 2024)
+- [[code-query-actuals-dwh]] — query SQL canonica per gli actuals mensili (Volume, GR, GM) dal DWH Stuart

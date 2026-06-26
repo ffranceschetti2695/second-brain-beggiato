@@ -1,9 +1,9 @@
 {
   "collapse-filter": false,
-  "search": "",
+  "search": "-path:workspace/journal/_templates -path:workspace/canon",
   "showTags": false,
   "showAttachments": false,
-  "hideUnresolved": false,
+  "hideUnresolved": true,
   "showOrphans": true,
   "collapse-color-groups": false,
   "colorGroups": [],
@@ -17,6 +17,6 @@
   "repelStrength": 7.55381944444444,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.7012106342135026,
+  "scale": 0.9584476769878758,
   "close": true
 }

@@ -1,19 +1,17 @@
 ---
 title: Indice — Areas
-summary: Elenco di tutti i reparti aziendali di Aurora Sistemi con link alle rispettive note hub.
+summary: Aree di vita e lavoro con le rispettive note hub.
 tags: [areas, index]
 status: active
 created: 2026-06-14
-updated: 2026-06-14
-related: ["[[index-self]]", "[[area-commerciale]]", "[[area-prodotto-tech]]", "[[area-customer-success]]", "[[area-operations-finance]]", "[[area-marketing]]"]
+updated: 2026-06-17
+related: ["[[index-self]]"]
 ---
 
 # Indice — Areas
 
-Tutti i reparti aziendali di Aurora Sistemi.
+Aree di vita e lavoro.
 
-- [[area-commerciale]] — Sales, pipeline, ICP, canali
-- [[area-prodotto-tech]] — Prodotto, roadmap, R&D, Data & AI
-- [[area-customer-success]] — Onboarding, NPS, churn, supporto
-- [[area-operations-finance]] — Finance, legal, HR, operations
-- [[area-marketing]] — Brand, contenuti, canali, eventi
+- [[area-fp-and-a]] — area professionale principale: FP&A dal banking alle startup
+- [[area-formazione]] — percorso formativo: doppia laurea Politecnico di Torino e Tongji University
+- [[area-ai-business]] — progetto imprenditoriale: costruire e vendere company brain aziendali

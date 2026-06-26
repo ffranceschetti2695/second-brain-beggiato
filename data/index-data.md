@@ -1,15 +1,17 @@
 ---
 title: Indice — Data
-summary: Raccolta di KPI, metriche e dataset quantitativi di Aurora Sistemi.
+summary: Dati quantitativi, metriche e indicatori personali e professionali.
 tags: [data, index]
 status: active
 created: 2026-06-14
-updated: 2026-06-14
-related: ["[[index-self]]", "[[data-kpi-fine-2025]]"]
+updated: 2026-06-25
+related: ["[[index-self]]"]
 ---
 
 # Indice — Data
 
-Dati quantitativi e indicatori di performance di Aurora Sistemi.
+Dati quantitativi e metriche.
 
-- [[data-kpi-fine-2025]] — KPI al 31 dicembre 2025: ARR, churn, NPS, clienti, edifici gestiti
+- [[data-carriera-timeline]] — cronologia completa delle esperienze professionali e formative
+- [[data-fc3-baseline-2026]] — baseline forecast FC3 Stuart (export marzo 2026) per le slide di performance mensili
+- [[data-stuart-segmentazione-clienti]] — mappa cliente → segmento → barra del waterfall, con i top account per paese

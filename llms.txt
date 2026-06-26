@@ -6,74 +6,84 @@
 ---
 ## self/
 
-- [[index-self]] — Mappa navigabile di tutte le cartelle del vault Aurora Sistemi. Punto di ingresso principale del grafo.
-- [[self-identita-aurora]] — Hub centrale del cervello aziendale di Aurora Sistemi: anagrafica, missione, posizionamento, C-Level e mappa dei reparti.
+- [[index-self]] — Mappa navigabile di tutte le cartelle del vault. Punto di ingresso principale del grafo.
+- [[self-franceschetti]] — Hub centrale del Personal Brain: anagrafica, profilo professionale, competenze e mappa dei ruoli.
+- [[self-obiettivi]] — Obiettivi attuali di Francesco: breve, medio e lungo termine.
 
 ---
 ## areas/
 
-- [[area-commerciale]] — Divisione vendite di Aurora Sistemi, responsabile di new ARR e pipeline in Italia e nei mercati esteri.
-- [[area-customer-success]] — Divisione responsabile della retention, dell'onboarding e del supporto ai 127 clienti attivi di Aurora Sistemi.
-- [[area-marketing]] — Divisione che gestisce domanda, contenuti e presenza pubblica di Aurora Sistemi sul mercato PropTech.
-- [[area-operations-finance]] — Divisione che gestisce finanza, HR, legal e le operazioni interne di Aurora Sistemi.
-- [[area-prodotto-tech]] — Divisione che sviluppa e mantiene i prodotti Aurora Sistemi, dalla roadmap all'infrastruttura cloud.
-- [[index-areas]] — Elenco di tutti i reparti aziendali di Aurora Sistemi con link alle rispettive note hub.
+- [[area-ai-business]] — Area dedicata al progetto imprenditoriale AI di Francesco: costruire e vendere company brain aziendali.
+- [[area-formazione]] — Percorso formativo di Francesco: doppia laurea tra Politecnico di Torino e Tongji University Shanghai, con esperienza internazionale ONU.
+- [[area-fp-and-a]] — Area professionale principale di Francesco: FP&A attraverso startup fintech, TravelTech e last-mile delivery.
+- [[index-areas]] — Aree di vita e lavoro con le rispettive note hub.
 
 ---
 ## projects/
 
-- [[index-projects]] — Progetti strategici attivi di Aurora Sistemi con stato e owner.
-- [[progetto-acquisizione-propertyos]] — Due diligence esplorativa per l'acquisizione di PropertyOS Srl (€3M ARR, Bologna), advisory Mediobanca.
-- [[progetto-auroradata-v2]] — Lancio di AuroraData 2.0 con benchmark di settore su dati peer anonimi, previsto per dicembre 2025.
+- [[index-projects]] — Progetti attivi con stato e obiettivi.
+- [[progetto-company-brain]] — Costruire e vendere company brain aziendali: architettura, roadmap e piano verso il primo cliente pilota.
+- [[progetto-france-task-force]] — Task force cross-funzionale per risolvere la sottoperformance della Francia su volume, RPO e CPO.
 
 ---
 ## concepts/
 
-- [[concetto-arr]] — Metrica che misura i ricavi ricorrenti annualizzati di Aurora Sistemi, base del modello SaaS.
-- [[concetto-churn]] — Percentuale di clienti o ricavi persi in un periodo, indicatore chiave della salute della retention.
-- [[concetto-efficienza-energetica]] — Tema crescente per i property manager che gestiscono grandi patrimoni immobiliari soggetti a normative ESG.
-- [[index-concepts]] — Glossario dei concetti chiave del business di Aurora Sistemi, dal modello economico al mercato.
+- [[concetto-additional-rpo]] — Componente di ricavo aggiuntivo che spiega perche' GR e GM di alcuni clienti divergono tra la dashboard e il DWH.
+- [[concetto-automazioni-ai-silo]] — Il vecchio approccio alle automazioni AI crea silos scollegati con contesto duplicato — la Company Brain risolve questo problema centralizzando la conoscenza.
+- [[concetto-bridge-waterfall]] — Metodologia del waterfall a 7 barre che spiega lo scostamento Actual vs FC3 per Volume, GR e GM nelle slide di performance Stuart.
+- [[concetto-company-brain]] — Framework per centralizzare la conoscenza aziendale in un sistema unico che alimenta tutte le automazioni AI.
+- [[concetto-fpa]] — Funzione finanziaria che supporta il management con forecasting, budgeting, analisi della performance e modellazione finanziaria.
+- [[concetto-rag]] — Tecnica AI che recupera solo i documenti semanticamente rilevanti per una query, invece di caricare tutto il knowledge base in contesto.
+- [[concetto-rpo-cpo-slo]] — Le tre metriche operative chiave di Stuart: Revenue Per Order, Cost Per Order e Service Level Objective.
+- [[concetto-saas-metrics]] — Metriche chiave per valutare la salute di un business SaaS: costo di acquisizione, valore del cliente nel tempo e tasso di abbandono.
+- [[index-concepts]] — Glossario personale di concetti, framework e idee ricorrenti.
 
 ---
 ## docs/
 
-- [[doc-prezzi-piani]] — Struttura tariffaria dei tre piani di AuroraGest: Starter €490/mese, Business €1.200/mese, Enterprise su preventivo.
-- [[doc-procedura-onboarding]] — Processo standard di 60 giorni per l'attivazione dei clienti Enterprise, con migrazione dati e formazione incluse.
-- [[index-docs]] — Procedure operative, listini e documentazione interna di Aurora Sistemi.
+- [[doc-dwh-finance-schema]] — Le tabelle del DWH Stuart usate per gli actuals di performance: granularita', colonne chiave, conversione FX e caveat.
+- [[doc-flusso-performance-mensile]] — Procedura ripetibile per costruire i bridge Actual vs FC3 mensili: dalla baseline e dalla query DWH ai 7 waterfall, con i check di quadratura.
+- [[doc-modelli-monetizzazione-ai]] — I tre modelli pratici per fare business con l'AI costruita attorno a una Company Brain: formazione, retainer e prodottizzazione.
+- [[index-docs]] — Documenti di riferimento, procedure e note operative personali.
 
 ---
 ## entities/
 
-- [[cliente-edilizia-pubblica-lombarda]] — Ente pubblico con 1.650 unità, ARR €310K, referral attivo e opportunità upsell modulo compliance da €24K.
-- [[cliente-family-office-cardinali]] — Family office a rischio churn per cambio di CFO interno ostile al software: ARR €280K, 980 unità.
-- [[cliente-fondo-visconti]] — Fondo immobiliare Enterprise con 2.100 unità, ARR €490K, in espansione verso la Spagna con upsell AuroraRent.
-- [[cliente-gestioni-meridionali]] — Property manager a rischio churn: ARR €175K, NPS 48, ticket aperto da 3 mesi su lentezza modulo manutenzioni.
-- [[cliente-polo-universitario-sud]] — Maggiore cliente per ARR: ente pubblico di housing studentesco con 4.800 unità e €750K ARR, attivo dal 2020.
-- [[cliente-residenze-aurora-verde]] — Cliente flagship di Aurora Sistemi: property manager con 3.200 unità, ARR €620K, attivo dal 2021.
-- [[entity-auroradata]] — Dashboard analytics di Aurora Sistemi per portfolio manager e family office con report automatici su KPI immobiliari.
-- [[entity-auroragest]] — ERP cloud core di Aurora Sistemi per la gestione completa del patrimonio immobiliare in affitto.
-- [[entity-aurorarent]] — Modulo di Aurora Sistemi per la gestione degli affitti brevi con channel manager integrato su Airbnb, Booking, VRBO ed Expedia.
-- [[index-entities]] — Catalogo di tutti i prodotti, persone e clienti di Aurora Sistemi.
-- [[persona-elena-ferraro]] — Responsabile commerciale di Aurora Sistemi: gestisce una pipeline da €4,8M con target Q4 di €2,1M new ARR.
-- [[persona-giulia-marchetti]] — CFO di Aurora Sistemi, responsabile del forecast finanziario e dei budget straordinari inclusa la due diligence PropertyOS.
-- [[persona-luca-bianchi]] — Co-fondatore e CTO di Aurora Sistemi, guida la migrazione a microservizi di AuroraGest nel 2026.
-- [[persona-marco-ferretti]] — Co-fondatore e CEO di Aurora Sistemi, ex property manager, ha avviato il progetto nel 2009 con Luca Bianchi.
-- [[persona-valentina-neri]] — Head of Customer Success di Aurora Sistemi, gestisce 12 CSM e 18 support su 127 clienti attivi.
+- [[entity-accenture]] — Società di consulenza strategica dove Francesco ha svolto un internship dal dicembre 2018 al maggio 2019.
+- [[entity-amenitiz]] — Startup TravelTech B2B SaaS dove Francesco ha lavorato come Senior FP&A Specialist dal luglio 2024 al settembre 2025.
+- [[entity-illimity]] — Startup fintech dove Francesco ha lavorato come FP&A Specialist dal giugno 2022 al luglio 2024.
+- [[entity-intesa-sanpaolo]] — Gruppo bancario europeo dove Francesco ha partecipato al Graduate Talent Program come Business Analyst dal dicembre 2019 al novembre 2020.
+- [[entity-kpmg]] — Big 4 dove Francesco ha lavorato come FP&A Analyst nella divisione Advisory dal novembre 2020 al giugno 2022.
+- [[entity-politecnico-torino]] — Università tecnica dove Francesco ha conseguito la laurea magistrale in Ingegneria Gestionale con specializzazione Finance, 110/110 con lode.
+- [[entity-stuart]] — Azienda B2B di last-mile delivery in cui Francesco lavora come FP&A Lead Manager dal settembre 2025.
+- [[entity-tongji-university]] — Università cinese dove Francesco ha completato il Double Degree in Sustainable Development con GPA 4.0, e partecipato all'Asia-Pacific Leadership Program dell'ONU.
+- [[entity-universita-pisa]] — Università dove Francesco ha conseguito la laurea triennale in Ingegneria Gestionale con voto 105/110.
+- [[index-entities]] — Catalogo di persone, aziende e strumenti rilevanti nella vita professionale e personale.
+- [[persona-anthony-espie]] — VP Operations Finance di Stuart.
+- [[persona-dimitrij-phoursa]] — Interim CEO di Stuart. Sponsor ExCo della France Task Force.
+- [[persona-gaspard-de-rohan-chabot]] — France Operations Lead di Stuart. Membro della France Task Force.
+- [[persona-maksymilian-libera]] — Poland Operations Lead di Stuart. Gestisce il team city ops Polonia e il CPO per il mercato PL.
+- [[persona-mark-jones]] — UK Finance/Operations di Stuart. Lavora su CPO courier costs e negoziazioni Tesco.
+- [[persona-mateo-noceti]] — FP&A Operations di Stuart. Collabora con Francesco sul ciclo di reforecast.
+- [[persona-ricardo-amorim]] — CRO di Stuart. Sponsor ExCo della France Task Force.
+- [[persona-sonia-gastelum]] — CFO di Stuart. Responsabile del team FP&A e del ciclo di reforecast.
+- [[persona-yohann-bensadoun]] — Supply Manager di Stuart.
 
 ---
 ## data/
 
-- [[data-kpi-fine-2025]] — Quadro dei principali indicatori di performance di Aurora Sistemi al 31 dicembre 2025.
-- [[index-data]] — Raccolta di KPI, metriche e dataset quantitativi di Aurora Sistemi.
+- [[data-carriera-timeline]] — Cronologia completa delle esperienze professionali e formative di Francesco, dal 2017 ad oggi.
+- [[data-fc3-baseline-2026]] — Baseline forecast FC3 (export marzo 2026) a livello cliente per il flusso slide mensile: struttura, segmenti e colonna maggio dettagliata.
+- [[data-stuart-segmentazione-clienti]] — Mappa cliente -> segmento -> barra del waterfall, con i top account per paese, usata negli actuals di performance.
+- [[index-data]] — Dati quantitativi, metriche e indicatori personali e professionali.
 
 ---
 ## code/
 
-- [[code-modulo-ai-morosita]] — Componente di AuroraGest che predice la probabilità di morosità per ogni conduttore, lanciato a gennaio 2024.
-- [[index-code]] — Moduli tecnici e componenti software sviluppati internamente da Aurora Sistemi.
+- [[code-query-actuals-dwh]] — Query SQL canonica per estrarre gli actuals mensili (Volume, GR, GM) dal DWH Stuart, con grouping cliente gia' applicato.
+- [[index-code]] — Snippet, script e moduli tecnici personali.
 
 ---
 ## outputs/
 
-- [[index-outputs]] — Report, presentazioni e deliverable prodotti da Aurora Sistemi.
-- [[output-report-board-q4-2025]] — Sintesi del verbale CdA del 15 novembre 2025 con andamento Q3 e obiettivi Q4 di Aurora Sistemi.
+- [[index-outputs]] — Output, report e deliverable prodotti nel tempo.
