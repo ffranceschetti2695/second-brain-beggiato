@@ -1,6 +1,6 @@
 {
-  "collapse-filter": false,
-  "search": "-path:workspace/journal/_templates -path:workspace/canon",
+  "collapse-filter": true,
+  "search": "-path:workspace/journal/_templates -path:workspace/canon -path:docs/assets",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
@@ -8,37 +8,37 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "Stuart",
+      "query": "tag:#stuart OR tag:#persona",
       "color": {
         "a": 1,
         "rgb": 14701138
       }
     },
     {
-      "query": "Franceschetti",
-      "color": {
-        "a": 1,
-        "rgb": 2731040
-      }
-    },
-    {
-      "query": "AI",
+      "query": "tag:#ai OR tag:#business OR tag:#company-brain OR tag:#saas OR tag:#automation OR tag:#automazioni",
       "color": {
         "a": 1,
         "rgb": 8226777
+      }
+    },
+    {
+      "query": "tag:#self",
+      "color": {
+        "a": 1,
+        "rgb": 2731040
       }
     }
   ],
   "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
+  "textFadeMultiplier": -0.6,
+  "nodeSizeMultiplier": 1.39156684027778,
+  "lineSizeMultiplier": 1.32670138888889,
   "collapse-forces": false,
   "centerStrength": 0.365364583333333,
   "repelStrength": 7.55381944444444,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.610162657531848,
+  "scale": 1.1551427468055708,
   "close": false
 }
