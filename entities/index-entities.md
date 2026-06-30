@@ -10,6 +10,10 @@ related: ["[[index-self]]"]
 
 # Indice — Entities
 
+## Aziende — fornitori e partner Stuart
+
+- [[entity-xcelbespoke]] — Fornitore UK divise corrieri (WooCommerce + logistica); contratto da rinegoziare
+
 ## Aziende — datori di lavoro
 
 - [[entity-stuart]] — Last-Mile Delivery B2B, ruolo attuale (FP&A Lead Manager)

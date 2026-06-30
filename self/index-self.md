@@ -16,6 +16,7 @@ Mappa completa del vault. Ogni cartella ha il proprio index con tutte le note at
 
 - [[self-franceschetti]] — hub centrale: anagrafica, profilo professionale, carriera e formazione
 - [[self-obiettivi]] — obiettivi attuali: breve, medio e lungo termine
+- [[self-documenti-identita]] — passaporto e carta d'identità: numeri, date di scadenza, dati anagrafici
 
 ## Cartelle
 

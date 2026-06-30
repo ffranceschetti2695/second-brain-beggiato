@@ -6,7 +6,29 @@
   "hideUnresolved": true,
   "showOrphans": true,
   "collapse-color-groups": false,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "Stuart",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "Franceschetti",
+      "color": {
+        "a": 1,
+        "rgb": 2731040
+      }
+    },
+    {
+      "query": "AI",
+      "color": {
+        "a": 1,
+        "rgb": 8226777
+      }
+    }
+  ],
   "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": 0,
@@ -17,6 +39,6 @@
   "repelStrength": 7.55381944444444,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.9584476769878758,
-  "close": true
+  "scale": 0.610162657531848,
+  "close": false
 }

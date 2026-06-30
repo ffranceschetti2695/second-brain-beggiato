@@ -1,18 +1,18 @@
 ---
-title: "Trascritto — Company Brain e automazioni AI aziendali (Gio, Agenzia Sei)"
-summary: "Trascritto del video YouTube di Gio (Agenzia Sei) su come il mercato delle automazioni AI è cambiato e come costruire una Company Brain in 3 layer."
+title: "Trascritto — Company Brain e automazioni AI aziendali (Giovanni Beggiato, Agenzia Sei)"
+summary: "Trascritto del video YouTube di Giovanni Beggiato (Agenzia Sei) su come il mercato delle automazioni AI è cambiato e come costruire una Company Brain in 3 layer."
 tags: [sources, ai, automazioni, company-brain, monetizzazione]
 status: raw
 created: 2026-06-18
 updated: 2026-06-18
 url: "https://www.youtube.com/watch?v=wA20usPv8jw"
-author: "Gio — Agenzia Sei"
+author: "Giovanni Beggiato — Agenzia Sei"
 related: ["[[index-sources]]"]
 ---
 
 # Trascritto — Company Brain e automazioni AI aziendali
 
-**Fonte:** YouTube — Gio, Agenzia Sei  
+**Fonte:** YouTube — Giovanni Beggiato, Agenzia Sei  
 **URL:** https://www.youtube.com/watch?v=wA20usPv8jw  
 **Data di pubblicazione:** circa giugno 2026  
 
@@ -22,7 +22,7 @@ related: ["[[index-sources]]"]
 
 Il modo in cui si fanno le automazioni con l'intelligenza artificiale nelle aziende negli ultimi mesi è cambiato completamente. E la cosa strana è che veramente poche persone se ne sono accorte. La maggior parte delle persone continua a creare automazioni nel vecchio modo e cioè costruendo un'automazione alla volta, un po' di qua, un po' di là e poi si trova con un sacco di pezzi scollegati. In questo video ti faccio vedere esattamente cosa è cambiato e soprattutto quali sono tre modi possibili per monetizzarci sopra.
 
-Se sei nuovo al canale sono Joe con la mia agenzia di intelligenza artificiale Gente Sei. Facciamo consulenza ad aziende che vanno dai €10.000.000 al mese fino ai 50 milioni di euro all'anno ed ho poi una community privata di imprenditori e freelancer che vogliono imparare ad applicare l'AI nel loro business o a rivenderlo ad altre aziende.
+Se sei nuovo al canale sono Giovanni Beggiato con la mia agenzia di intelligenza artificiale Gente Sei. Facciamo consulenza ad aziende che vanno dai €10.000.000 al mese fino ai 50 milioni di euro all'anno ed ho poi una community privata di imprenditori e freelancer che vogliono imparare ad applicare l'AI nel loro business o a rivenderlo ad altre aziende.
 
 Quindi, cominciamo a capire come il mercato dell'AI sta cambiando, come il mercato delle soluzioni AI sta cambiando e come anche le aziende si stanno adattando. Allora, una volta quello che succedeva era la seguente cosa e cioè qualcuno voleva vendere un servizio AI e partiva da un problema. Quindi questo è un problema che viene identificato generalmente con un'attività di tipo cold outbound, quindi email, messaggi LinkedIn, eccetera. Una volta identificato il problema si costruiva una soluzione. Per costruire questa soluzione ovviamente avevamo la necessità di raccogliere un dato alla volta, quindi le nostre integrazioni per Gmail, ClickUp, Panda Doc, qualsiasi cosa vogliate. E dopo quello che succedeva era che arrivavamo alla fine di questa automazione e siccome quello che cercavamo di ottenere era una nuova soluzione, allora si applicava il modello retainer.
 

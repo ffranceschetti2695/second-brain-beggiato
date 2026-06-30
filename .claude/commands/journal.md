@@ -1,6 +1,6 @@
 # Skill: journal
 
-Gestisce la memoria dinamica del cervello Aurora. Quattro comandi:
+Gestisce la memoria dinamica del Personal Brain. Quattro comandi:
 `inizia sessione` | `buongiorno` | `chiudi sessione` | `fine giornata`.
 
 **TRIGGER OBBLIGATORIO — NON NEGOZIABILE:**
@@ -32,10 +32,17 @@ Qualsiasi frase che segnali l'inizio di una sessione di lavoro — anche se form
 2. Leggi l'ultima nota in `workspace/journal/sessions/` (quella col nome data piu' recente).
    Se non esiste nessuna sessione, leggi `workspace/journal/daily/` per l'ultima nota daily.
    Se non esiste neppure quella, di' che e' la prima sessione registrata.
-3. Rispondi con un **briefing di massimo 5 righe**:
-   - Dove eravamo rimasti (da "## Aperto" dell'ultima nota).
-   - Cosa era rimasto aperto.
-   - Cosa conviene affrontare oggi, in ordine di priorita' (deduci dal contesto).
+3. Rispondi con un **briefing strutturato in due sezioni**, leggendo la sezione "## Aperto" dell'ultima nota:
+
+   **Stuart**
+   - I prossimi step lavorativi confermati dall'utente alla chiusura della sessione precedente.
+   - Se la sezione Aperto non ha sottosezione Stuart, deduci dal contesto.
+
+   **Progetto AI / Monetizzazione**
+   - I prossimi step del progetto company brain / AI confermati dall'utente alla chiusura.
+   - Se la sezione Aperto non ha sottosezione AI, deduci dal contesto.
+
+   Niente inferenze extra, niente suggerimenti non richiesti. Riporta solo cio' che e' scritto nell'Aperto.
 4. Non creare file. Non chiedere conferma. Solo il briefing.
 
 ---
@@ -47,14 +54,26 @@ Qualsiasi frase che segnali l'inizio di una sessione di lavoro — anche se form
 **Passi:**
 
 1. Guarda la conversazione corrente e deduci cosa e' stato fatto in questa sessione.
-2. **Prima di scrivere**, di' in 3 righe cosa hai capito che abbiamo fatto.
-   Aspetta l'ok dell'utente.
-3. Dopo l'ok, scrivi il file:
+2. In un unico messaggio, presenta:
+   - La sintesi in 3 righe di cosa abbiamo fatto (non chiedere conferma su questa parte).
+   - Subito sotto, la bozza della sezione **## Aperto** strutturata in due workstream:
+   ```
+   ## Aperto
+
+   ### Stuart
+   - <prossimo step lavorativo Stuart, se presente>
+
+   ### Progetto AI / Monetizzazione
+   - <prossimo step progetto company brain / AI, se presente>
+   ```
+   Poi chiedi esplicitamente: "Questi sono i prossimi passi che ti mostrero' all'inizio della prossima sessione. Vanno bene o vuoi aggiungere, togliere o riformulare qualcosa?"
+   Aspetta la risposta e applica le modifiche richieste. Non chiedere una seconda conferma.
+3. Scrivi il file con l'Aperto confermato:
    - **Percorso:** `workspace/journal/sessions/sessione-<YYYY-MM-DD>.md`
      dove `<YYYY-MM-DD>` e' la data di oggi.
    - Se esiste gia' un file con quel nome (piu' sessioni nello stesso giorno),
      aggiungi un suffisso: `sessione-<YYYY-MM-DD>-b.md`, `sessione-<YYYY-MM-DD>-c.md`, ecc.
-4. **Frontmatter:**
+5. **Frontmatter:**
    ```yaml
    ---
    title: "Sessione <YYYY-MM-DD>"
@@ -68,7 +87,7 @@ Qualsiasi frase che segnali l'inizio di una sessione di lavoro — anche se form
    ```
    Il campo `related` deve contenere [[wikilink]] alle note toccate durante la sessione.
    Sceglile da `llms.txt`. Se non riesci a identificarne nessuna, chiedi all'utente.
-5. **Corpo:**
+6. **Corpo:**
    ```
    ## Fatto
    <Cosa abbiamo concluso.>
@@ -77,9 +96,14 @@ Qualsiasi frase che segnali l'inizio di una sessione di lavoro — anche se form
    <Le scelte prese e il perche'.>
 
    ## Aperto
-   <Cosa resta in sospeso.>
+
+   ### Stuart
+   - <prossimi step Stuart confermati dall'utente>
+
+   ### Progetto AI / Monetizzazione
+   - <prossimi step AI/monetizzazione confermati dall'utente>
    ```
-6. Dopo aver scritto, conferma il percorso del file creato.
+7. Dopo aver scritto, conferma il percorso del file creato.
 
 ---
 

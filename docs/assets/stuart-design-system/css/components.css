@@ -1,0 +1,191 @@
+/* ============================================================================
+   Stuart Design System — Components
+   Depends on: colors_and_type.css
+   ============================================================================ */
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-body);
+  line-height: 1;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 14px 24px;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: background var(--dur-base) var(--ease-out),
+              color var(--dur-base) var(--ease-out),
+              box-shadow var(--dur-base) var(--ease-out),
+              transform var(--dur-fast) var(--ease-out);
+  user-select: none;
+  white-space: nowrap;
+}
+.btn:focus-visible {
+  outline: 3px solid rgba(1, 146, 255, 0.4);
+  outline-offset: 2px;
+}
+.btn:active { transform: scale(0.98); }
+
+.btn--primary {
+  background: var(--stuart-dark-blue);
+  color: var(--fg-on-brand);
+}
+.btn--primary:hover {
+  background: var(--stuart-blue);
+}
+
+.btn--secondary {
+  background: transparent;
+  color: var(--stuart-dark-blue);
+  border-color: var(--stuart-dark-blue);
+}
+.btn--secondary:hover {
+  background: var(--stuart-dark-blue);
+  color: #fff;
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--stuart-dark-blue);
+}
+.btn--ghost:hover { color: var(--stuart-blue); }
+
+.btn--sm { padding: 10px 16px; font-size: var(--fs-body-sm); }
+.btn--lg { padding: 18px 32px; font-size: var(--fs-body-lg); }
+.btn[disabled], .btn.is-disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* ---------- Inputs ---------- */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.field__label {
+  font-size: var(--fs-body-sm);
+  font-weight: var(--fw-bold);
+  color: var(--stuart-dark-blue);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.input,
+.field__input {
+  width: 100%;
+  padding: 14px 16px;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  color: var(--stuart-dark-blue);
+  background: #fff;
+  border: 1.5px solid var(--stuart-blue);
+  border-radius: var(--radius-sm);
+  transition: border-color var(--dur-base) var(--ease-out),
+              box-shadow var(--dur-base) var(--ease-out);
+}
+.input::placeholder { color: var(--stuart-blue); }
+.input:hover { border-color: var(--stuart-dark-blue); }
+.input:focus,
+.field__input:focus {
+  outline: none;
+  border-color: var(--stuart-dark-blue);
+  box-shadow: 0 0 0 3px rgba(1, 146, 255, 0.25);
+}
+.field__hint {
+  font-size: var(--fs-caption);
+  color: var(--stuart-blue);
+  font-style: italic;
+}
+
+/* ---------- Chip ---------- */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  background: var(--stuart-blue);
+  color: #fff;
+  font-size: var(--fs-body-sm);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.chip--dark { background: var(--stuart-dark-blue); color: #fff; }
+.chip--green { background: var(--stuart-green); color: var(--stuart-dark-blue); }
+.chip--outline {
+  background: transparent;
+  color: var(--stuart-dark-blue);
+  border: 1.5px solid var(--stuart-dark-blue);
+}
+.chip__dot {
+  width: 8px; height: 8px; border-radius: 999px; background: #fff;
+}
+
+/* ---------- Badge ---------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.badge--success  { background: var(--stuart-green);     color: var(--stuart-dark-blue); }
+.badge--info     { background: var(--stuart-blue);      color: #fff; }
+.badge--info-alt { background: var(--stuart-dark-blue); color: #fff; }
+.badge--attention{ background: var(--stuart-magenta);   color: #fff; }
+
+/* ---------- Card ---------- */
+.card {
+  background: #fff;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  padding: var(--sp-5);
+  transition: transform var(--dur-base) var(--ease-out),
+              box-shadow var(--dur-base) var(--ease-out);
+}
+.card--hoverable:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.card--brand {
+  background: var(--stuart-blue);
+  color: #fff;
+}
+.card--dark {
+  background: var(--stuart-dark-blue);
+  color: #fff;
+}
+
+/* ---------- Icon tile (branded circular) ---------- */
+.icon-tile {
+  width: 64px; height: 64px;
+  border-radius: 999px;
+  background: var(--stuart-blue);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.icon-tile--dark { background: var(--stuart-dark-blue); }
+.icon-tile--green { background: var(--stuart-green); color: var(--stuart-dark-blue); }
+
+/* ---------- Blob (signature organic shape) ---------- */
+.blob {
+  background: var(--stuart-blue);
+  border-radius: 60% 40% 55% 45% / 50% 55% 45% 50%;
+}
+.blob--pill {
+  background: var(--stuart-blue);
+  border-radius: 999px;
+}

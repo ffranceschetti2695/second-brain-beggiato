@@ -20,3 +20,5 @@ Concetti, framework e idee ricorrenti.
 - [[concetto-rag]] — Recupero semantico dei soli documenti rilevanti per una query AI
 - [[concetto-company-brain]] — Framework per centralizzare la conoscenza aziendale come base condivisa per tutte le automazioni AI
 - [[concetto-automazioni-ai-silo]] — Il problema del contesto duplicato nelle automazioni AI e il cambio di paradigma knowledge-first
+- [[concetto-automazione-local-first]] — Automazione con rete+secret va eseguita in locale, non in sandbox cloud; corollario anti-bot
+- [[concetto-core-adapters-presentation]] — Separare logica/dati/presentazione per rendere un tool personale convertibile in SaaS

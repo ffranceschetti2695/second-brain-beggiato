@@ -1,6 +1,6 @@
 # Canon — Company Brain e business con l'AI
-**Fonte:** `sources/source-company-brain-joe-agenziasei.md`
-**Autore:** Gio, Agenzia Sei
+**Fonte:** `sources/source-company-brain-giovanni-beggiato.md`
+**Autore:** Giovanni Beggiato, Agenzia Sei
 **URL:** https://www.youtube.com/watch?v=wA20usPv8jw
 **Data elaborazione:** 2026-06-18
 
@@ -42,7 +42,7 @@ Una Company Brain è una knowledge base aziendale strutturata che alimenta tutte
 | 2 | Integrazioni | Collegamento di tutti gli strumenti in uso (CRM, email, gestionale, ATS, ecc.) |
 | 3 | Automazioni | Processi che si attivano autonomamente partendo dal contesto condiviso |
 
-### I 3 layer di una Company Brain (esempio di Gio)
+### I 3 layer di una Company Brain (esempio di Giovanni Beggiato)
 | Layer | Strumento | Funzione |
 |-------|-----------|----------|
 | Visivo | Obsidian | Documenti di contesto, SOP, skill, routine, curriculum |
@@ -121,5 +121,5 @@ Una Company Brain è una knowledge base aziendale strutturata che alimenta tutte
 - **Il contesto è lo step zero** in qualsiasi scenario — che tu stia implementando per la tua azienda o vendendo ad altri.
 - **Parti dal problema più grosso:** una volta che la Company Brain sa risolverlo, le automazioni successive diventano più semplici perché il contesto è già strutturato.
 - **Sequenza corretta:** problema → prima automazione → validazione del valore → mappatura knowledge → espansione.
-- **Sull'AGI:** Gio invita a diffidare da chi dice che la rivoluzione AGI è già qui. Siamo in avvicinamento (es. MITOS), ma i governi e le normative entreranno in gioco. Orizzonte: non imminente.
+- **Sull'AGI:** Giovanni Beggiato invita a diffidare da chi dice che la rivoluzione AGI è già qui. Siamo in avvicinamento (es. MITOS), ma i governi e le normative entreranno in gioco. Orizzonte: non imminente.
 - **Modello premium opzionale:** il retainer può includere anche solo l'accesso a te come consulente (es. mese 1 setup, mesi 2-3 solo fee per consulenza). Utile per chi ha budget limitato ma vuole guidance.

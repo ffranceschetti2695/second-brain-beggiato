@@ -16,4 +16,4 @@ Il workflow è: **sources/** → riconciliazione in `workspace/canon` → note a
 
 ## Fonti originali
 
-- [[source-company-brain-joe-agenziasei]] — Trascritto video YouTube: Company Brain e automazioni AI (Joe, Agenzia Sei, 2026)
+- [[source-company-brain-giovanni-beggiato]] — Trascritto video YouTube: Company Brain e automazioni AI (Giovanni Beggiato, Agenzia Sei, 2026)

@@ -7,6 +7,7 @@
 ## self/
 
 - [[index-self]] — Mappa navigabile di tutte le cartelle del vault. Punto di ingresso principale del grafo.
+- [[self-documenti-identita]] — Dati anagrafici e documenti ufficiali: passaporto e carta d'identità
 - [[self-franceschetti]] — Hub centrale del Personal Brain: anagrafica, profilo professionale, competenze e mappa dei ruoli.
 - [[self-obiettivi]] — Obiettivi attuali di Francesco: breve, medio e lungo termine.
 
@@ -23,15 +24,20 @@
 
 - [[index-projects]] — Progetti attivi con stato e obiettivi.
 - [[progetto-company-brain]] — Costruire e vendere company brain aziendali: architettura, roadmap e piano verso il primo cliente pilota.
+- [[progetto-finance-dashboard]] — Dashboard finanziaria personale + automazione locale giornaliera (Illimity via Enable Banking, AMEX via export Excel) che controlla la spesa MTD vs forecast. Prototipo verso una futura SaaS.
 - [[progetto-france-task-force]] — Task force cross-funzionale per risolvere la sottoperformance della Francia su volume, RPO e CPO.
+- [[progetto-ops-dashboard]] — Web app che sostituisce il GM OPS Tracker di Stuart e punta a diventare un prodotto SaaS vendibile ad altre aziende last-mile.
+- [[stato-stream-ai]] — Punto di ripartenza dei tre stream AI di Francesco: automazione reporting mensile, OPS GM Dashboard, Company Brain prodotto. Stato al 2026-06-29 + prossimi passi.
 
 ---
 ## concepts/
 
 - [[concetto-additional-rpo]] — Componente di ricavo aggiuntivo che spiega perche' GR e GM di alcuni clienti divergono tra la dashboard e il DWH.
+- [[concetto-automazione-local-first]] — Un'automazione che chiama API esterne usando credenziali va eseguita dove ci sono rete e secret (il Mac), non in una sandbox cloud che le blocca.
 - [[concetto-automazioni-ai-silo]] — Il vecchio approccio alle automazioni AI crea silos scollegati con contesto duplicato — la Company Brain risolve questo problema centralizzando la conoscenza.
 - [[concetto-bridge-waterfall]] — Metodologia del waterfall a 7 barre che spiega lo scostamento Actual vs FC3 per Volume, GR e GM nelle slide di performance Stuart.
 - [[concetto-company-brain]] — Framework per centralizzare la conoscenza aziendale in un sistema unico che alimenta tutte le automazioni AI.
+- [[concetto-core-adapters-presentation]] — Separare logica pura, accesso ai dati e presentazione: rende un tool personale testabile e convertibile in SaaS cambiando solo lo strato dati e l'hosting.
 - [[concetto-fpa]] — Funzione finanziaria che supporta il management con forecasting, budgeting, analisi della performance e modellazione finanziaria.
 - [[concetto-rag]] — Tecnica AI che recupera solo i documenti semanticamente rilevanti per una query, invece di caricare tutto il knowledge base in contesto.
 - [[concetto-rpo-cpo-slo]] — Le tre metriche operative chiave di Stuart: Revenue Per Order, Cost Per Order e Service Level Objective.
@@ -41,9 +47,14 @@
 ---
 ## docs/
 
+- [[doc-accesso-dati-bancari]] — Verdetto su come accedere ai propri dati Illimity e AMEX in Italia da privato senza P.IVA: Enable Banking funziona per Illimity, nessun aggregatore raggiunge AMEX, resta l'export Excel.
+- [[doc-dashboard-telefono-screenshot-email]] — Pattern per portare una dashboard HTML sul telefono senza hosting né VPN: Playwright headless fotografa ogni tab e le immagini vengono incorporate inline nell'email.
 - [[doc-dwh-finance-schema]] — Le tabelle del DWH Stuart usate per gli actuals di performance: granularita', colonne chiave, conversione FX e caveat.
+- [[doc-email-da-script-macos]] — Ricetta per mandare email da uno script Python su Mac via Gmail SMTP: app-password (non la password normale), salvata nel Keychain, più il fix dei certificati SSL del Python.framework con certifi.
 - [[doc-flusso-performance-mensile]] — Procedura ripetibile per costruire i bridge Actual vs FC3 mensili: dalla baseline e dalla query DWH ai 7 waterfall, con i check di quadratura.
+- [[doc-launchd-automazioni-mac]] — Come schedulare e triggerare automazioni locali su macOS con launchd: esecuzione a orario fisso, trigger su cambiamento di una cartella, e perché è meglio di cron.
 - [[doc-modelli-monetizzazione-ai]] — I tre modelli pratici per fare business con l'AI costruita attorno a una Company Brain: formazione, retainer e prodottizzazione.
+- [[doc-stuart-design-system]] — Token di brand Stuart (colori, GT Walsheim, spaziature, componenti) per UI e presentazioni on-brand.
 - [[index-docs]] — Documenti di riferimento, procedure e note operative personali.
 
 ---
@@ -74,6 +85,7 @@
 ## data/
 
 - [[data-carriera-timeline]] — Cronologia completa delle esperienze professionali e formative di Francesco, dal 2017 ad oggi.
+- [[data-fc3-2026-mensile]] — FC3 March 2026 export: Volume e GM mensili 2026 a livello cliente, aggregati per paese (UK/FR/PL) e globale. Riconciliato contro la riga TOTAL del file.
 - [[data-fc3-baseline-2026]] — Baseline forecast FC3 (export marzo 2026) a livello cliente per il flusso slide mensile: struttura, segmenti e colonna maggio dettagliata.
 - [[data-stuart-segmentazione-clienti]] — Mappa cliente -> segmento -> barra del waterfall, con i top account per paese, usata negli actuals di performance.
 - [[index-data]] — Dati quantitativi, metriche e indicatori personali e professionali.
