@@ -5,7 +5,9 @@ description: Generate Stuart's weekly Financial Update — the Friday "pre-weeke
 
 # Stuart Weekly Financial Update
 
-Produces the Friday "pre-weekend check" Slack post sent to Stuart's C-level operations channel. Audience: ExCo + Ops leadership — finance-literate, scan-only, want the bottom line up top with a clean three-way split and the monthly landing per market. The output is plain text ready to paste into Slack — short paragraphs, no headers, no bullets, no bold inside the message.
+Produces the Friday "pre-weekend check" Slack post sent to Stuart's C-level operations channel. Audience: ExCo + Ops leadership — finance-literate, scan-only, want the bottom line up top with a clean three-way split and the monthly landing per market. Exactly three lines are bold: the title, the "Weekly — ..." header, and the "Monthly landing — ..." header. Everything else is plain text, with a bulleted ("•") list for the per-market monthly breakdown. Confirmed against Francesco's actual sent messages in #operations (most recently 2026-06-26).
+
+**Bold syntax depends on the layer**: when composing the message string passed into the Slack MCP tools (`slack_send_message`, `slack_send_message_draft`), use standard markdown `**double asterisks**` — those tools parse standard markdown and convert it to Slack's native mrkdwn on send/draft. Single asterisks (`*text*`) in that same tool call render as *italics*, not bold — confirmed by testing (2026-07-17). The single-asterisk form is what Slack's own mrkdwn looks like once already rendered/stored (e.g. what you see reading raw text back via `slack_search_public`), but it is NOT what to type into these tool calls.
 
 ## When this triggers
 
@@ -110,20 +112,20 @@ Sanity check (after coherence check passes): sum the focus-month weekly GM Impac
 
 ### Step 4 — Compose the message
 
-Use this exact structure. Startup-friendly Slack formatting: bold key figures and market names, bullet points for the monthly breakdown, one emoji in the title. Slack does not support underline — use bold for emphasis instead. **No narrative attribution.**
+Use this exact structure. Bold ONLY the three lines below (title, weekly header, monthly header) — when composing the string for `slack_send_message`/`slack_send_message_draft`, write them with standard markdown `**double asterisks**` (the tool converts to Slack's native bold on post/draft). Everything else (figures, market names, body sentences) stays plain, unbolded text. Bullet points ("•", not "-" or "*") for the monthly per-market breakdown. One emoji in the title (`:moneybag:`). Slack does not support underline — use bold for emphasis instead. **No narrative attribution.**
 
 ```
-**💰 Financial Update — Pre-weekend check (all figures vs [comparison base])**
+:moneybag: **Financial Update — Pre-weekend check (all figures vs [comparison base])**
 
 **Weekly — W[XX] ([Mon DD–DD])**
-Lower volumes than target in **[markets]** (missing c.a **X.Xk packages** vs [base] — UK ~X.Xk, FR ~X.Xk, PL ~X.Xk). Higher RPO in **[markets]** vs [base]. [Markets] running CPO overspends vs [base].
-Overall this week we aim to have a **[positive/negative] GM impact of [+/-]€X.Xk** vs [base] (+€X.Xk due to higher RPO, -€X.Xk due to CPO overspend and -€X.Xk due to missed volumes).
+Lower volumes than target in [markets] (missing c.a X.Xk packages vs [base] — UK ~X.Xk, FR ~X.Xk, PL ~X.Xk). Higher RPO in [markets] vs [base]. [Markets] running CPO overspends vs [base].
+Overall this week we aim to have a [positive/negative] GM impact of [+/-]€X.Xk vs [base] (+€X.Xk due to higher RPO, -€X.Xk due to CPO overspend and -€X.Xk due to missed volumes).
 
 **Monthly landing — [Month]**
-At current pace we aim to **[meet / beat by €X.Xk / miss by c.a €X.Xk] the monthly GM target** vs [base].
-• **UK** [+/-]€X.Xk ([data-grounded explanation])
-• **FR** [+/-]€X.Xk ([data-grounded explanation])
-• **PL** [+/-]€X.Xk ([data-grounded explanation])
+At current pace we aim to [meet / beat by €X.Xk / miss by c.a €X.Xk] the monthly GM target vs [base].
+• UK [+/-]€X.Xk ([data-grounded explanation])
+• FR [+/-]€X.Xk ([data-grounded explanation])
+• PL [+/-]€X.Xk ([data-grounded explanation])
 
 Any questions please let me know. Thanks.
 ```
@@ -180,7 +182,7 @@ Sign-off line is fixed: "Any questions please let me know. Thanks." (no exclamat
 
 These have caused real errors in past attempts — do not violate.
 
-1. **Header must read exactly** "Financial Update after our pre-weekend check (all figures vs BP'26)". Don't drop the parenthetical.
+1. **Title line must read** `:moneybag: **Financial Update — Pre-weekend check (all figures vs [base])**` (double-asterisk markdown as typed into the Slack tool call) — em dash before "Pre-weekend", parenthetical kept. Don't drop the emoji, the bold, or the parenthetical.
 2. **Always include the monthly landing paragraph** with per-market UK/FR/PL breakdown. The weekly headline alone is incomplete.
 3. **Read the spreadsheet as XLSX, not as natural-language**. The natural-language render merges tabs and produces wrong figures.
 4. **Use the LEFT block of the Monthly tab only** (cols 8-11). The right block (cols 16-19) is broken.
@@ -193,7 +195,7 @@ These have caused real errors in past attempts — do not violate.
 
 ## Tone and format
 
-- Plain prose. No headers, no bullets, no bold inside the message.
+- Bold (`**double asterisks**` in the tool call — NOT single asterisks, which render as italics) only the title, the "Weekly — ..." header, and the "Monthly landing — ..." header. Plain prose elsewhere; bullets ("•") for the monthly per-market list.
 - **All € figures use one decimal** (€X.Yk format throughout the message — weekly headline and monthly figures alike).
 - Weekly GM headline: **round half-down (truncate the second decimal)**. So -€4,154 → -€4.1k (not -€4.2k). In Python: `int(abs(v)/100)/10` then attach the sign.
 - All other € figures: standard half-up to one decimal. So €81,561 → €81.6k, €146,679 → €146.7k.
@@ -218,15 +220,17 @@ These have caused real errors in past attempts — do not violate.
 
 ## Quick worked example (W17 / Apr 20-26, 2026)
 
-> Financial Update after our pre-weekend check (all figures vs BP'26)
+> :moneybag: **Financial Update — Pre-weekend check (all figures vs BP'26)**
 >
-> Lower volumes than target in the UK & FR (missing c.a 31k packages vs BP'26 — UK ~24k, FR ~7k). PL on BP.
->
-> Higher RPO in UK & FR vs BP'26. UK & FR running CPO overspends vs BP'26.
->
+> **Weekly — W17 (Apr 20–26)**
+> Lower volumes than target in the UK & FR (missing c.a 31k packages vs BP'26 — UK ~24k, FR ~7k). PL on BP. Higher RPO in UK & FR vs BP'26. UK & FR running CPO overspends vs BP'26.
 > Overall this week we aim to have a negative GM impact of -€4.1k vs BP'26 (+€79k due to higher RPO, -€30k due to CPO overspend and -€54k due to missed volumes).
 >
-> At current pace we aim to beat the monthly GM target by c.a €7k vs BP'26. UK +€79k (RPO above BP, offsetting c.a 87k packages missed & CPO overspend), FR -€87k (c.a 26k packages missed & CPO overspend, partly offset by RPO above BP), PL +€15k (RPO & volumes above BP).
+> **Monthly landing — April**
+> At current pace we aim to beat the monthly GM target by c.a €7k vs BP'26.
+> • UK +€79k (RPO above BP, offsetting c.a 87k packages missed & CPO overspend)
+> • FR -€87k (c.a 26k packages missed & CPO overspend, partly offset by RPO above BP)
+> • PL +€15k (RPO & volumes above BP)
 >
 > Any questions please let me know. Thanks.
 

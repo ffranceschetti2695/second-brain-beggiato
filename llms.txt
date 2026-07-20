@@ -10,6 +10,7 @@
 - [[self-documenti-identita]] — Dati anagrafici e documenti ufficiali: passaporto e carta d'identità
 - [[self-franceschetti]] — Hub centrale del Personal Brain: anagrafica, profilo professionale, competenze e mappa dei ruoli.
 - [[self-obiettivi]] — Obiettivi attuali di Francesco: breve, medio e lungo termine.
+- [[self-stuart-achievements]] — Sintesi degli achievement realizzati da Francesco nei primi 11 mesi in Stuart, utile come riferimento per colloqui futuri.
 
 ---
 ## areas/
@@ -24,37 +25,58 @@
 
 - [[index-projects]] — Progetti attivi con stato e obiettivi.
 - [[progetto-company-brain]] — Costruire e vendere company brain aziendali: architettura, roadmap e piano verso il primo cliente pilota.
+- [[progetto-fc6-topline-proposal]] — Proposta per portare il topline FC6 (UK+FR+PL) sopra la soglia di €50m richiesta dagli investitori; lavoro nel folder esterno ~/Desktop/FC6_Topline_Proposal/.
 - [[progetto-finance-dashboard]] — Dashboard finanziaria personale + automazione locale giornaliera (Illimity via Enable Banking, AMEX via export Excel) che controlla la spesa MTD vs forecast. Prototipo verso una futura SaaS.
 - [[progetto-france-task-force]] — Task force cross-funzionale per risolvere la sottoperformance della Francia su volume, RPO e CPO.
 - [[progetto-ops-dashboard]] — Web app che sostituisce il GM OPS Tracker di Stuart e punta a diventare un prodotto SaaS vendibile ad altre aziende last-mile.
+- [[progetto-speed-to-lead]] — Demo di agente vocale per la qualifica lead di un'azienda di ispezioni immobiliari: da form Typeform a chiamata automatica con booking, costruita per un amico.
+- [[progetto-stuart-strategy-alignment-fc6]] — Sintesi che confronta la strategia corporate 2025-2027 di Stuart con l'esecuzione attuale (BP26/FC3/FC6/OKR), con le implicazioni concrete per la proposta FC6
 - [[stato-stream-ai]] — Punto di ripartenza dei tre stream AI di Francesco: automazione reporting mensile, OPS GM Dashboard, Company Brain prodotto. Stato al 2026-06-29 + prossimi passi.
 
 ---
 ## concepts/
 
 - [[concetto-additional-rpo]] — Componente di ricavo aggiuntivo che spiega perche' GR e GM di alcuni clienti divergono tra la dashboard e il DWH.
+- [[concetto-agent-skill-harness]] — Skill = procedura che modifica il mio comportamento; Agent = sub-istanza delegata con contesto isolato; Harness = l'infrastruttura (CLI/SDK) che rende possibili entrambi.
+- [[concetto-ancoraggio-assumption-forecast-vs-actual]] — Per giustificare un aggiustamento su un forecast già esistente, confrontare il forecast stesso con l'actual dello stesso periodo evita il doppio conteggio che si crea confrontando invece con un tasso di crescita YoY sull'anno precedente
 - [[concetto-automazione-local-first]] — Un'automazione che chiama API esterne usando credenziali va eseguita dove ci sono rete e secret (il Mac), non in una sandbox cloud che le blocca.
 - [[concetto-automazioni-ai-silo]] — Il vecchio approccio alle automazioni AI crea silos scollegati con contesto duplicato — la Company Brain risolve questo problema centralizzando la conoscenza.
 - [[concetto-bridge-waterfall]] — Metodologia del waterfall a 7 barre che spiega lo scostamento Actual vs FC3 per Volume, GR e GM nelle slide di performance Stuart.
+- [[concetto-claude-code-vs-api-billing]] — Claude Code (abbonamento) e Anthropic API (SDK Python) sono due prodotti con billing separato: usare l'SDK consuma crediti API indipendentemente dall'abbonamento.
 - [[concetto-company-brain]] — Framework per centralizzare la conoscenza aziendale in un sistema unico che alimenta tutte le automazioni AI.
 - [[concetto-core-adapters-presentation]] — Separare logica pura, accesso ai dati e presentazione: rende un tool personale testabile e convertibile in SaaS cambiando solo lo strato dati e l'hosting.
+- [[concetto-courier-payout-strategy]] — Disegnare il CPO in modo strategico e proattivo sui driver operativi, non reattivo: per Ricardo e' la root cause da risolvere prima di scalare i clienti FR.
+- [[concetto-forecast-adjustment-baked-in-vs-bolt-on]] — Per correggere un forecast, modificare direttamente gli input del modello (Volume/RPO) è più coerente che aggiungere una colonna di overlay: i costi e il margine si ricalcolano da soli e non rischiano di disallinearsi.
 - [[concetto-fpa]] — Funzione finanziaria che supporta il management con forecasting, budgeting, analisi della performance e modellazione finanziaria.
+- [[concetto-pricing-tier-decoupling-ricavo-margine]] — Con un pricing a soglie di volume, un aumento di volume può ridurre il margine anche se il ricavo sale: superare una soglia (tier) abbassa la tariffa netta su tutto il volume di quel mese.
 - [[concetto-rag]] — Tecnica AI che recupera solo i documenti semanticamente rilevanti per una query, invece di caricare tutto il knowledge base in contesto.
 - [[concetto-rpo-cpo-slo]] — Le tre metriche operative chiave di Stuart: Revenue Per Order, Cost Per Order e Service Level Objective.
 - [[concetto-saas-metrics]] — Metriche chiave per valutare la salute di un business SaaS: costo di acquisizione, valore del cliente nel tempo e tasso di abbandono.
+- [[concetto-speed-to-lead-stack]] — Perché ogni layer dello stack dell'agente vocale Speed to Lead esiste e come si incastrano tra loro
+- [[concetto-stack-automazione-cloud-gratis]] — Pattern riusabile per un'automazione personale che gira a orario fisso indipendentemente dai miei dispositivi: prendi dati, elabora, genera report, notifica, eseguita su CI cloud gratuita e sempre accesa.
+- [[concetto-stuart-courier-value-proposition]] — Come Stuart pensa la retention e la value proposition dei courier partner in un mercato dove il multi-apping è la norma, e i suoi collegamenti con densità operativa e CPO
+- [[concetto-stuart-gtm-matrix-priorita]] — Framework di prioritizzazione dei verticali di business di Stuart (matrice crescita potenziale vs market share relativo) e le implicazioni cross-funzionali per ogni quadrante
+- [[concetto-stuart-modelli-revenue]] — Struttura GR→NR per i tre modelli operativi Stuart (Merchant UK, Agent 2.0 FR, Agent 1.0 PL): come si classifica il ricavo e cosa conta come Net Revenue.
+- [[concetto-stuart-positioning-shift-2024]] — I 4 pillar del riposizionamento di Stuart comunicato nel 2024/Q1 2025: offering, price, coverage, courier, con il relativo moat e il flywheel di crescita
+- [[concetto-stuart-price-leadership]] — Come Stuart applica la strategia price leadership in pratica: fase pre-sale/post-sale, honeymoon stage, priorità operative per città e governance del margine lordo
+- [[concetto-stuart-strategia-2025-2027]] — Vision, mission, ambizione e razionale della strategia corporate di Stuart per il periodo 2025-2027, hub verso i concetti di dettaglio (positioning, GTM matrix, price leadership, courier value prop)
 - [[index-concepts]] — Glossario personale di concetti, framework e idee ricorrenti.
 
 ---
 ## docs/
 
 - [[doc-accesso-dati-bancari]] — Verdetto su come accedere ai propri dati Illimity e AMEX in Italia da privato senza P.IVA: Enable Banking funziona per Illimity, nessun aggregatore raggiunge AMEX, resta l'export Excel.
+- [[doc-bollette-tracking]] — Dove vivono lo storico delle bollette (CSV) e la skill che lo aggiorna, per rispondere a domande come 'quanto pago di luce' o 'media di aprile'
+- [[doc-company-brain-ingestion-horizons]] — Lookback configurati per ogni fonte del stuart-brain: Confluence per spazio, Slack da definire, Drive e DWH da fare.
 - [[doc-dashboard-telefono-screenshot-email]] — Pattern per portare una dashboard HTML sul telefono senza hosting né VPN: Playwright headless fotografa ogni tab e le immagini vengono incorporate inline nell'email.
 - [[doc-dwh-finance-schema]] — Le tabelle del DWH Stuart usate per gli actuals di performance: granularita', colonne chiave, conversione FX e caveat.
 - [[doc-email-da-script-macos]] — Ricetta per mandare email da uno script Python su Mac via Gmail SMTP: app-password (non la password normale), salvata nel Keychain, più il fix dei certificati SSL del Python.framework con certifi.
 - [[doc-flusso-performance-mensile]] — Procedura ripetibile per costruire i bridge Actual vs FC3 mensili: dalla baseline e dalla query DWH ai 7 waterfall, con i check di quadratura.
 - [[doc-launchd-automazioni-mac]] — Come schedulare e triggerare automazioni locali su macOS con launchd: esecuzione a orario fisso, trigger su cambiamento di una cartella, e perché è meglio di cron.
+- [[doc-mbr-next-steps-followup]] — Procedura ripetibile: chiedere update agli owner dei next steps dell'MBR precedente, prima della prossima MBR
 - [[doc-modelli-monetizzazione-ai]] — I tre modelli pratici per fare business con l'AI costruita attorno a una Company Brain: formazione, retainer e prodottizzazione.
 - [[doc-stuart-design-system]] — Token di brand Stuart (colori, GT Walsheim, spaziature, componenti) per UI e presentazioni on-brand.
+- [[doc-tone-of-voice]] — Come Francesco vuole che siano scritti i messaggi di lavoro (Slack, email): corti, naturali, diretti, senza accondiscendenza, senza giustificarsi, ne' em dash.
 - [[index-docs]] — Documenti di riferimento, procedure e note operative personali.
 
 ---
@@ -84,10 +106,16 @@
 ---
 ## data/
 
+- [[data-bp26-topline-2026]] — Budget Plan 2026 (BP26): GM/Volume/Gross Revenue/Total Cost mensili e annui per paese (UK/FR/PL) + Pipeline (mensile per segmento ENT/MM/SMB, riconciliata) e per cliente/segmento, con RPO/CPO derivati, dopo la nuova cost allocation. Germania (JET-DE) esclusa.
 - [[data-carriera-timeline]] — Cronologia completa delle esperienze professionali e formative di Francesco, dal 2017 ad oggi.
 - [[data-fc3-2026-mensile]] — FC3 March 2026 export: Volume e GM mensili 2026 a livello cliente, aggregati per paese (UK/FR/PL) e globale. Riconciliato contro la riga TOTAL del file.
 - [[data-fc3-baseline-2026]] — Baseline forecast FC3 (export marzo 2026) a livello cliente per il flusso slide mensile: struttura, segmenti e colonna maggio dettagliata.
+- [[data-stuart-company-journey-revenue]] — Timeline dei ricavi lordi di Stuart dal 2016 al 2025 con i principali eventi societari: fondazione, acquisizioni, lancio Polonia, cambio di mandato verso la profittabilità
+- [[data-stuart-market-size-last-mile-2025]] — Dimensione e crescita (CAGR) dei mercati food/grocery/retail e-commerce in UK e Francia, e dimensione dei mercati di consegna urgente in UK/FR/PL con posizionamento own-channel di Stuart
 - [[data-stuart-segmentazione-clienti]] — Mappa cliente -> segmento -> barra del waterfall, con i top account per paese, usata negli actuals di performance.
+- [[data-supply-cost-2026]] — Nel piano di novembre 2025 il costo di supply 2026 era fissato a 670k, frutto dello stream di ottimizzazione dei costi di contribution; i numeri di onboarding discussi in FC6 lo riportano quasi al livello BP (pre-ottimizzazione).
+- [[data-tesco-pricing-tiers-fc6]] — Tabella dei nuovi tier RPO Tesco post-RFP (confermati, in vigore da luglio 2026), con la vecchia tabella tier 2023-2025 che sostituiscono
+- [[data-tesco-reforecast-luglio-2026-zone-exits]] — L'account manager Stuart per Tesco non ha accettato la proposta FC6 (item A, +4% volume H2 + re-tiering); Stuart sta uscendo da alcune zone/città UK non profittevoli o con problemi di performance, non un calo imposto dal cliente
 - [[index-data]] — Dati quantitativi, metriche e indicatori personali e professionali.
 
 ---
@@ -100,3 +128,5 @@
 ## outputs/
 
 - [[index-outputs]] — Output, report e deliverable prodotti nel tempo.
+- [[output-company-brain-manuale-tecnico]] — Riferimento tecnico completo di company-brain-app: stack, pipeline, connettori, strumenti di manutenzione, dedotto dal codice sorgente.
+- [[output-company-brain-retrospettiva]] — Sintesi ragionata di tutto il lavoro fatto sul Company Brain: perché esiste, come è fatto, quali decisioni sono state prese e come si sono evolute nel tempo.

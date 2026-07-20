@@ -1,5 +1,17 @@
 # Istruzioni per Claude
 
+## ⚠️ HARD CONSTRAINT — LINGUA DI RISPOSTA (leggi per prima cosa, sempre)
+
+**Rispondi SEMPRE nella stessa lingua dell'ULTIMO messaggio di Francesco.** Nessuna eccezione, nessun default all'italiano.
+
+- Questo vale **anche e soprattutto subito dopo aver invocato una skill o un tool** (es. `journal`, `daily-recap`, qualsiasi skill), il cui contenuto/output interno può essere in italiano indipendentemente dalla lingua della conversazione.
+- Prima di scrivere la PRIMA parola della tua risposta finale, controlla: "in che lingua è scritto l'ultimo messaggio di Francesco?" e rispondi in quella lingua, punto. Ignora la lingua delle note del vault, degli skill file, dei log, o dei tuoi messaggi precedenti.
+- Se l'ultimo messaggio è in inglese → rispondi in inglese. Se è in italiano → rispondi in italiano. Nessun'altra euristica prevale su questa.
+
+Questa regola è già stata patchata una volta (2026-07-13) e continua a essere violata dopo l'uso di skill: trattala come la massima priorità di stile, non come una nota tra le altre.
+
+---
+
 Questa è una cartella di vault Obsidian. Quando ricevi una domanda:
 
 1. **Parti sempre dai file markdown presenti in questa cartella** — leggi prima i file rilevanti, poi rispondi.
@@ -26,6 +38,10 @@ Quando crei note con frontmatter YAML, rispetta sempre queste regole (testate e 
 
 ## Quando crei, modifichi o elimini una nota
 
+**Soglia per creare una nota**: solo se aggiunge conoscenza statica genuina — un concetto, una regola, una struttura, un meccanismo. Non creare note per tabelle di dati numerici riestraibili dal DWH o da un file Excel (es. ratei mensili, split percentuali, serie storiche): quelli non aggiungono knowledge e si riderivano dalla fonte. Il test: "Se non avessi questa nota, perderei una comprensione che non posso recuperare altrove?" Se no, non crearla.
+
+**Eccezione**: quando Francesco chiede esplicitamente di ricordare i piani di forecast/budget (BP, FC3, FC6, ecc.), crea la nota con i dati numerici anche se sono tabelle — quei piani sono snapshot temporali che non si riderivano facilmente.
+
 1. Una nota = **un concetto** (atomica). Collega ad altre note con `[[wikilink]]` liberamente, usando solo nomi di note che esistono (verifica in `llms.txt`).
 2. **Aggiorna l'`index-*.md` della cartella** (una riga: `[[nome-nota]] — gancio`).
 3. **Rigenera l'indice AI**: `python3 generate_llms.py`. **Non editare `llms.txt` a mano** (è derivato dai frontmatter).
@@ -36,4 +52,6 @@ A inizio sessione ("inizia sessione" / "buongiorno") e a fine ("chiudi sessione"
 
 ## Stile
 
-Italiano naturale, niente m-dash, date sempre assolute in formato `YYYY-MM-DD` (mai relative).
+- **Lingua: rispondi sempre nella lingua in cui Francesco ha scritto il messaggio corrente**, indipendentemente dalla lingua delle note del vault, di skill/tool intermedi, o dei messaggi precedenti nella stessa sessione. Se scrive in inglese, rispondi in inglese; se in italiano, rispondi in italiano. Questa regola vale anche subito dopo l'esecuzione di una skill (es. `journal`) che internamente produce output o log in italiano: la risposta finale all'utente deve comunque essere nella lingua del suo ultimo messaggio.
+- Quando scrivi in italiano: niente m-dash, date sempre assolute in formato `YYYY-MM-DD` (mai relative).
+- Quando scrivi in inglese: usa le convenzioni naturali inglesi (comunque niente m-dash, date assolute).

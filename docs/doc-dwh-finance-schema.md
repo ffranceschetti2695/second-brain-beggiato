@@ -4,7 +4,7 @@ summary: "Le tabelle del DWH Stuart usate per gli actuals di performance: granul
 tags: [docs, stuart, dwh, sql, reference]
 status: active
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-02
 related: ["[[code-query-actuals-dwh]]", "[[doc-flusso-performance-mensile]]", "[[entity-stuart]]", "[[concetto-additional-rpo]]"]
 ---
 
@@ -43,6 +43,22 @@ Tabella di mapping: assegna ogni cliente a segmento, tier, forecast group e stat
 | `client_forecast_group` | Gruppo di forecast (base del `client_forecast_group_adj`) |
 | `client_status` | Existing / New (poi forzato a Churned per i gruppi churned) |
 | `client_cohort_year` | Anno di acquisizione |
+
+## Tabelle di forecast/budget (gsheets)
+
+Usate per estrarre i piani mensili FC3/FC6/BP26 per paese (FR/PL/UK).
+
+### `gsheets.raw_global_gm_projections_fc3__2026`
+
+FC3 2026: una riga per (country, month, variable). Variabili principali: `Delivery Fee`, `Service Fee`, `VAT Commission`, `Gross Revenues`, `Total Costs`, `Gross Margin`, `Base Earnings`, `Incentive Earnings`, `Volume`.
+
+### `gsheets.raw_global_gm_projections__2026`
+
+BP26 e versioni successive. Filtrare su `version = 'BP26'` per il piano annuale. Contiene `Volume` mensile per paese — usato come denominatore per calcolare i tassi impliciti di coupon.
+
+### Nota sui ratei FC3 vs FC6
+
+FC6 non separa DF/SF per FR né Base/Incentive per paese: entrambe le decomposizioni vanno ricalcolate applicando i ratei FC3 ai totali FC6.
 
 ## Regole d'uso
 

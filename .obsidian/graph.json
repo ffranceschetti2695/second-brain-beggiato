@@ -1,6 +1,6 @@
 {
   "collapse-filter": true,
-  "search": "-path:workspace/journal/_templates -path:workspace/canon -path:docs/assets",
+  "search": "-path:workspace/journal/_templates -path:workspace/canon -path:docs/assets -path:workspace/journal/ai-frontiera-log -path:sources -path:workspace/journal/open-items.md",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
@@ -27,9 +27,30 @@
         "a": 1,
         "rgb": 2731040
       }
+    },
+    {
+      "query": "Stuart",
+      "color": {
+        "a": 1,
+        "rgb": 14701137
+      }
+    },
+    {
+      "query": "Franceschetti",
+      "color": {
+        "a": 1,
+        "rgb": 2796576
+      }
+    },
+    {
+      "query": "Sessione",
+      "color": {
+        "a": 1,
+        "rgb": 16744699
+      }
     }
   ],
-  "collapse-display": false,
+  "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": -0.6,
   "nodeSizeMultiplier": 1.39156684027778,
@@ -39,6 +60,6 @@
   "repelStrength": 7.55381944444444,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.1551427468055708,
-  "close": false
+  "scale": 0.3481177029393336,
+  "close": true
 }

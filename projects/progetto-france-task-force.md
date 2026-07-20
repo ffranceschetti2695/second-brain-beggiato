@@ -5,7 +5,7 @@ tags: [projects, stuart, france]
 status: active
 created: 2026-06-18
 updated: 2026-06-18
-related: ["[[entity-stuart]]", "[[self-franceschetti]]", "[[persona-dimitrij-phoursa]]", "[[persona-ricardo-amorim]]", "[[persona-gaspard-de-rohan-chabot]]", "[[concetto-rpo-cpo-slo]]"]
+related: ["[[entity-stuart]]", "[[self-franceschetti]]", "[[persona-dimitrij-phoursa]]", "[[persona-ricardo-amorim]]", "[[persona-gaspard-de-rohan-chabot]]", "[[concetto-rpo-cpo-slo]]", "[[concetto-courier-payout-strategy]]"]
 ---
 
 # France Task Force

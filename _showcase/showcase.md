@@ -1,23 +1,23 @@
 ---
 title: Personal Brain — Showcase
-summary: "Fotografia del vault Personal Brain al 2026-06-26: 50 note, 213 wikilink, 1 componente connessa."
+summary: "Fotografia del vault Personal Brain al 2026-06-30: 62 note, 269 wikilink, 1 componente connessa."
 tags: [self, showcase, demo]
 status: active
-created: 2026-06-26
-updated: 2026-06-26
+created: 2026-06-30
+updated: 2026-06-30
 related: ["[[self-franceschetti]]", "[[index-self]]"]
 ---
 
 # Personal Brain — Showcase
 
-> Fotografia generata il **2026-06-26**. DERIVATA: rigenera con `python3 generate_showcase.py`.
+> Fotografia generata il **2026-06-30**. DERIVATA: rigenera con `python3 generate_showcase.py`.
 
 ## Metriche del vault
 
 | Metrica | Valore |
 |---|---|
-| Note totali | **50** |
-| Wikilink totali | **213** |
+| Note totali | **62** |
+| Wikilink totali | **269** |
 | Componenti connesse | **1** ✅ grafo unico |
 | Cartelle attive | **9** |
 
@@ -25,16 +25,16 @@ related: ["[[self-franceschetti]]", "[[index-self]]"]
 
 | Cartella | Note |
 |---|---|
-| self/ | 3 |
+| self/ | 4 |
 | areas/ | 4 |
-| projects/ | 3 |
-| concepts/ | 9 |
-| docs/ | 4 |
+| projects/ | 6 |
+| concepts/ | 11 |
+| docs/ | 9 |
 | entities/ | 20 |
-| data/ | 4 |
+| data/ | 5 |
 | code/ | 2 |
 | outputs/ | 1 |
-| **Totale** | **50** |
+| **Totale** | **62** |
 
 ## Hub per cartella
 

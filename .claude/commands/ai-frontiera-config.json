@@ -1,0 +1,48 @@
+{
+  "finestra_ore": 48,
+  "youtube_channels": [
+    {
+      "name": "Giovanni Beggiato (EN)",
+      "channel_id": "UCKhjadTBV98pKB1-fz33MTw",
+      "note": "AI Automation Agency, scala a €10k/mo"
+    },
+    {
+      "name": "Giovanni Beggiato (IT)",
+      "channel_id": "UCQbrJm-05Er6plcuNoVhuOw",
+      "handle": "@giovannibeggiato",
+      "note": "Canale italiano — AI in azienda, framework pratici"
+    },
+    {
+      "name": "Nick Saraev",
+      "channel_id": "UCbo-KbSjJDG6JWQ_MTZ_rNA",
+      "note": "AI automation, Claude Code, n8n, business building"
+    },
+    {
+      "name": "Nate Herk | AI Automation",
+      "channel_id": "UC2ojq-nuP8ceeHqiroeKhBA",
+      "note": "Workflow AI, tools pratici, Uppit AI founder"
+    },
+    {
+      "name": "Liam Ottley",
+      "channel_id": "UCui4jxDaMb53Gdh-AZUTPAg",
+      "note": "AI agency building, Morningside AI"
+    },
+    {
+      "name": "Matt Wolfe",
+      "channel_id": "UChpleBmo18P08aKCIgti38g",
+      "note": "AI news settimanali, tool reviews"
+    },
+    {
+      "name": "Cole Medin",
+      "channel_id": "UCMwVTLZIRRUyyVrkjDpn4pA",
+      "handle": "@ColeMedin",
+      "note": "AI agents avanzati, context engineering"
+    }
+  ],
+  "twitter_handles": [
+    "karpathy",
+    "sama",
+    "nicksaraev"
+  ],
+  "anthropic": true
+}

@@ -1,0 +1,382 @@
+{
+  "Tj3018n5MVg": {
+    "date": "2026-06-29",
+    "seen_on": "2026-07-01",
+    "type": "youtube",
+    "source": "Nate Herk | AI Automation",
+    "title": "Stanford's Method Turns Claude Into a PHD Level Research Team",
+    "url": "https://www.youtube.com/watch?v=Tj3018n5MVg",
+    "key_message": "Il framework di ricerca di Stanford applicato a Claude trasforma il modello in un team di ricerca autonomo a livello PhD.",
+    "bottom_line": "Tecnica concreta per fare research approfondita con Claude — utile per analisi competitive, market research e contenuti B2B da vendere ai clienti."
+  },
+  "https://nitter.net/Etched/status/2071972062202343590#m": {
+    "date": "2026-06-30",
+    "seen_on": "2026-07-01",
+    "type": "twitter",
+    "source": "@karpathy",
+    "title": "RT Etched: chip startup esce dallo stealth con $800M funding e contratti >$1B, SOTA su inference workloads.",
+    "url": "https://nitter.net/Etched/status/2071972062202343590#m"
+  },
+  "https://www.anthropic.com/news/claude-sonnet-5": {
+    "date": "2026-06-30",
+    "seen_on": "2026-07-01",
+    "type": "anthropic",
+    "source": "Anthropic",
+    "title": "Introducing Claude Sonnet 5",
+    "url": "https://www.anthropic.com/news/claude-sonnet-5",
+    "key_message": "Sonnet 5 porta performance frontier su coding, agenti e lavoro professionale ad alta scala."
+  },
+  "https://www.anthropic.com/news/claude-science-ai-workbench": {
+    "date": "2026-06-30",
+    "seen_on": "2026-07-01",
+    "type": "anthropic",
+    "source": "Anthropic",
+    "title": "Claude Science, an AI workbench for scientists",
+    "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+    "key_message": "Workbench dedicato ai ricercatori con output tracciabili e tool scientifici integrati — prima verticalizzazione di prodotto oltre l'API."
+  },
+  "Qt0oRFQm_3U": {
+    "date": "2026-07-01",
+    "seen_on": "2026-07-01",
+    "type": "youtube",
+    "source": "Matt Wolfe",
+    "title": "How Anthropic Became Worth MORE Than OpenAI",
+    "url": "https://www.youtube.com/shorts/Qt0oRFQm_3U",
+    "summary": "Short che fotografa il cambio di percezione del mercato: Anthropic vale ora $965B contro i $852B di OpenAI. Tre metriche chiave: $30B di revenue annualizzata contro $25B di OpenAI, 70% di win rate enterprise, profittabilità attesa 2028 vs 2030.",
+    "key_message": "Anthropic ha superato OpenAI in valutazione di mercato grazie a metriche operative superiori, non solo alla narrativa.",
+    "bottom_line": "Posizionarsi su Claude/Anthropic è sempre più credibile anche davanti a CFO e procurement enterprise."
+  },
+  "VUh3HDSsS5g": {
+    "date": "2026-06-30",
+    "seen_on": "2026-07-01",
+    "type": "youtube",
+    "source": "Matt Wolfe",
+    "title": "I Can't Believe A Company Made This",
+    "url": "https://www.youtube.com/shorts/VUh3HDSsS5g",
+    "summary": "Short su Xiaoban, bagno autonomo a guida autonoma della startup cinese Yueban. Navigazione autonoma, bidet, smaltimento rifiuti e autodocking. Curiosità tech su hardware autonomo in segmenti inaspettati.",
+    "key_message": "L'autonomia hardware sta arrivando in contesti inaspettati della vita quotidiana.",
+    "bottom_line": "Contenuto da condividere per engagement — non direttamente monetizzabile."
+  },
+  "BF7ohr7OJcE": {
+    "date": "2026-06-30",
+    "seen_on": "2026-07-01",
+    "type": "youtube",
+    "source": "Matt Wolfe",
+    "title": "Don't Fall For This AI Trap",
+    "url": "https://www.youtube.com/shorts/BF7ohr7OJcE",
+    "summary": "Short sul rischio di automatizzare tutto indiscriminatamente. Matt propone un framework mentale: chiedersi quali task beneficiano dell'AI senza sacrificare giudizio critico e creatività, e quali vanno lasciati all'umano. Cita implicitamente il MIT study sul brain rot da overreliance.",
+    "key_message": "Automatizzare tutto è un errore tanto quanto non automatizzare niente — serve un framework di selezione consapevole.",
+    "bottom_line": "Il pitch corretto con i clienti scettici: non 'sostituiamo tutto' ma 'identifichiamo dove AI amplifica e dove intralcia'."
+  },
+  "sNzsGC2zf6c": {
+    "date": "2026-06-29",
+    "seen_on": "2026-07-01",
+    "type": "youtube",
+    "source": "Matt Wolfe",
+    "title": "Generate The BEST Animations With AI",
+    "url": "https://www.youtube.com/shorts/sNzsGC2zf6c",
+    "summary": "Short sul workflow per creare motion graphics con AI usando framework programmabili come Remotion o Hyperframes. Si scrive una descrizione testuale, l'AI genera il codice che renderizza in MP4. Niente After Effects, replicabile anche senza competenze video.",
+    "key_message": "AI + Remotion/Hyperframes rende la produzione di motion graphics professionale accessibile senza competenze video.",
+    "bottom_line": "Servizio vendibile a creator e PMI che hanno bisogno di motion graphics senza budget per una produzione video."
+  },
+  "VRkkJejseCo": {
+    "date": "2026-06-30",
+    "seen_on": "2026-07-01",
+    "type": "youtube",
+    "source": "Cole Medin",
+    "title": "Anthropic Just Released Claude Sonnet 5 and it's VERY IMPRESSIVE!",
+    "url": "https://www.youtube.com/shorts/VRkkJejseCo",
+    "summary": "Short di reazione al lancio di Sonnet 5. Cole sottolinea il rapporto qualità/costo: prestazioni frontier a prezzo Sonnet. Per pipeline agentic, Sonnet 5 diventa il default naturale lasciando Opus/Fable per i ragionamenti più profondi.",
+    "key_message": "Sonnet 5 è il nuovo default cost-efficient per agenti AI — qualità frontier a prezzo Sonnet.",
+    "bottom_line": "Per chi costruisce sistemi agentic per clienti: abbassa i costi di inference mantenendo qualità alta."
+  },
+  "https://nitter.net/nicksaraev/status/2072307603200475434#m": {
+    "date": "2026-07-01",
+    "seen_on": "2026-07-01",
+    "type": "twitter",
+    "source": "@nicksaraev",
+    "title": "Usa Claude + X MCP per minare 1k post virali nella tua nicchia ed estrarne i pattern — diventa top 1% poster.",
+    "url": "https://nitter.net/nicksaraev/status/2072307603200475434#m"
+  },
+  "https://nitter.net/nicksaraev/status/2072307015293305176#m": {
+    "date": "2026-07-01",
+    "seen_on": "2026-07-01",
+    "type": "twitter",
+    "source": "@nicksaraev",
+    "title": "Esperimento 30 giorni: posting stream-of-consciousness su X senza polish, una review notifiche al giorno.",
+    "url": "https://nitter.net/nicksaraev/status/2072307015293305176#m"
+  },
+  "https://www.anthropic.com/news/redeploying-fable-5": {
+    "date": "2026-06-30",
+    "seen_on": "2026-07-01",
+    "type": "anthropic",
+    "source": "Anthropic",
+    "title": "Redeploying Fable 5",
+    "url": "https://www.anthropic.com/news/redeploying-fable-5",
+    "key_message": "Fable 5 torna disponibile dopo fix al jailbreak (>99% block rate) e revoca dei controlli all'export USA."
+  },
+  "dzfFN0RgPlI": {
+    "date": "2026-07-07",
+    "seen_on": "2026-07-07",
+    "type": "youtube",
+    "source": "Nick Saraev",
+    "title": "Reduce Fable 5 API Costs By 30% In Just 5 Mins (Exploit)",
+    "url": "https://www.youtube.com/watch?v=dzfFN0RgPlI",
+    "summary": "Il video mostra come ridurre i costi di utilizzo dell'API di Fable 5 tra il 30% e il 50% usando un repository GitHub chiamato Pxpipe. Nick Saraev illustra quello che chiama un \"billing glitch\": la differenza di costo tra input testuali (1,03$) e input basati su immagini (0,69$), sfruttando questa asimmetria per costruire una pipeline di elaborazione che converte contenuto testuale in formato immagine prima di inviarlo al modello. Vengono spiegati passo passo l'architettura della pipeline, l'economia dietro la scelta e i risultati misurati, che mostrano una riduzione del 68,7% dei token consumati a parità di output. Un caso pratico di ottimizzazione dei costi di inferenza pensato per chi gestisce workload ad alto volume con modelli Claude/Fable.",
+    "key_message": "Convertire input testuali in immagini prima di inviarli a Fable 5 riduce drasticamente i token consumati e il costo per chiamata.",
+    "bottom_line": "Tecnica da applicare subito a pipeline agentic ad alto volume per clienti: margini più alti a parità di prezzo venduto."
+  },
+  "7Su6W_FlUbk": {
+    "date": "2026-07-06",
+    "seen_on": "2026-07-07",
+    "type": "youtube",
+    "source": "Nick Saraev",
+    "title": "The BEST AI Video Strategy No One Is Using",
+    "url": "https://www.youtube.com/watch?v=7Su6W_FlUbk",
+    "summary": "Nick Saraev documenta la costruzione di Clairvo, un SaaS che ha appena raggiunto 1 milione di dollari di ARR, e usa il caso come traccia per insegnare come costruire applicazioni simili con Claude Code e agenti AI. Il focus del prodotto è migliorare i tassi di risposta alle chiamate (call pickup rate) attraverso tecniche come il predictive pacing algoritmico e la rotazione di numeri locali, pratiche mutuate dal mondo del cold calling e del telemarketing automatizzato. Il video segue lo sviluppo end-to-end mostrando come architettare il prodotto, dove intervenire con l'automazione AI e come impostare metriche di validazione del business prima di scalare.",
+    "key_message": "Un SaaS verticale per ottimizzare le chiamate outbound, costruito interamente con Claude Code, ha raggiunto 1M$ di ARR.",
+    "bottom_line": "Blueprint replicabile per costruire micro-SaaS AI-native su nicchie B2B con problemi operativi misurabili."
+  },
+  "XTBWVVcF3Pk": {
+    "date": "2026-07-07",
+    "seen_on": "2026-07-07",
+    "type": "youtube",
+    "source": "Nate Herk | AI Automation",
+    "title": "How I Make Opus Think Like Fable (5 easy steps)",
+    "url": "https://www.youtube.com/watch?v=XTBWVVcF3Pk",
+    "summary": "Nate Herk mostra come replicare la metodologia di ragionamento di Fable applicandola a Opus 4.8, coprendo la gestione dei livelli di effort e l'implementazione di una tabella di routing tra modelli diversi in base al task. Condivide il proprio playbook per costruire agenzie AI, evidenziando l'importanza di scegliere il modello giusto per ogni step di un workflow invece di usarne uno solo per tutto. Nota inoltre che Fable 5 tornerà a breve dietro abbonamento, un elemento che rende ancora più rilevante saper replicare le sue capacità di ragionamento su modelli più economici o più facilmente accessibili come Opus.",
+    "key_message": "Si può ottenere un ragionamento simile a Fable su Opus 4.8 con un routing intelligente tra modelli e livelli di effort.",
+    "bottom_line": "Riduce la dipendenza da un singolo modello premium, permettendo di offrire pipeline agentic più economiche e resilienti ai clienti."
+  },
+  "1CAy_mB6E-g": {
+    "date": "2026-07-06",
+    "seen_on": "2026-07-07",
+    "type": "youtube",
+    "source": "Matt Wolfe",
+    "title": "Building An Automated Video Production Factory",
+    "url": "https://www.youtube.com/shorts/1CAy_mB6E-g",
+    "summary": "Matt Wolfe costruisce un generatore automatizzato di video per social media basato sul modello Fable di Anthropic, motivato dall'imminente cambio di pricing previsto per il 7 luglio. Il sistema converte articoli e idee in script, effettua fact-checking dei contenuti, genera B-roll automaticamente e analizza le metriche di performance dei video pubblicati per iterare sul formato. Un esempio pratico di come orchestrare più step di un content pipeline (scrittura, verifica, produzione visiva, analisi) interamente con agenti AI, riducendo il lavoro manuale a supervisione e direzione creativa.",
+    "key_message": "Una content factory video completamente automatizzata è oggi costruibile con Fable per script, fact-check, B-roll e analisi performance.",
+    "bottom_line": "Servizio pacchettizzabile per creator e brand che vogliono scalare la produzione video senza team interno."
+  },
+  "https://nitter.net/sama/status/2073791666553844074#m": {
+    "date": "2026-07-05",
+    "seen_on": "2026-07-07",
+    "type": "twitter",
+    "source": "@sama",
+    "title": "our older kid put two words together for the first time and i am approximately as amazed by this cognitive feat as i am by GPT-5.6 discovering new math",
+    "url": "https://nitter.net/sama/status/2073791666553844074#m"
+  },
+  "https://nitter.net/sama/status/2073635910512726444#m": {
+    "date": "2026-07-05",
+    "seen_on": "2026-07-07",
+    "type": "twitter",
+    "source": "@sama",
+    "title": "grateful to the people that created the idea of america... most impressive social experiment in history.",
+    "url": "https://nitter.net/sama/status/2073635910512726444#m"
+  },
+  "https://nitter.net/nicksaraev/status/2074292583153680818#m": {
+    "date": "2026-07-07",
+    "seen_on": "2026-07-07",
+    "type": "twitter",
+    "source": "@nicksaraev",
+    "title": "Feeling extremely creative today. It's either the 4hrs of sleep or the 5 cups of coffee. I will CRUSH YouTube again",
+    "url": "https://nitter.net/nicksaraev/status/2074292583153680818#m"
+  },
+  "https://nitter.net/nicksaraev/status/2074284100966666298#m": {
+    "date": "2026-07-07",
+    "seen_on": "2026-07-07",
+    "type": "twitter",
+    "source": "@nicksaraev",
+    "title": "Scale is a recipe. No one read it to the end (con video)",
+    "url": "https://nitter.net/nicksaraev/status/2074284100966666298#m"
+  },
+  "https://nitter.net/nicksaraev/status/2074277400175878281#m": {
+    "date": "2026-07-06",
+    "seen_on": "2026-07-07",
+    "type": "twitter",
+    "source": "@nicksaraev",
+    "title": "Usa Fable per esplorare la propria genealogia familiare, \"an extremely interesting deep dive\".",
+    "url": "https://nitter.net/nicksaraev/status/2074277400175878281#m"
+  },
+  "https://nitter.net/nicksaraev/status/2073913885405618636#m": {
+    "date": "2026-07-05",
+    "seen_on": "2026-07-07",
+    "type": "twitter",
+    "source": "@nicksaraev",
+    "title": "Entusiasta di riprendere la pubblicazione video con un nuovo workflow di editing.",
+    "url": "https://nitter.net/nicksaraev/status/2073913885405618636#m"
+  },
+  "https://nitter.net/nicksaraev/status/2073798116353188186#m": {
+    "date": "2026-07-05",
+    "seen_on": "2026-07-07",
+    "type": "twitter",
+    "source": "@nicksaraev",
+    "title": "Very dope new video pipeline cooking",
+    "url": "https://nitter.net/nicksaraev/status/2073798116353188186#m"
+  },
+  "https://www.anthropic.com/news/alberta-government-claude-cybersecurity": {
+    "date": "2026-07-06",
+    "seen_on": "2026-07-07",
+    "type": "anthropic",
+    "source": "Anthropic",
+    "title": "Government of Alberta uses Claude to find and fix cybersecurity vulnerabilities across government systems",
+    "url": "https://www.anthropic.com/news/alberta-government-claude-cybersecurity",
+    "key_message": "Case study su un'implementazione governativa di Claude per identificare e correggere vulnerabilità di sicurezza informatica su larga scala nei sistemi pubblici dell'Alberta."
+  },
+  "8rVQuZlRaqo": {
+    "date": "2026-07-14",
+    "seen_on": "2026-07-14",
+    "type": "youtube",
+    "source": "Nick Saraev",
+    "title": "Steal My Actual AI Agent Workflow (2027)",
+    "url": "https://www.youtube.com/watch?v=8rVQuZlRaqo",
+    "summary": "Nick Saraev condivide il workflow di agenti AI sviluppato e usato all'interno della sua azienda da 5 milioni di dollari annui, perfezionato negli ultimi tre mesi. Il video mostra come integrare gli agenti AI nelle operazioni di business attraverso un sistema di tagging dei task, verifica umana e valutazione continua dei risultati. Saraev spiega come strutturare il flusso in modo che l'AI gestisca l'esecuzione ma resti sempre un checkpoint umano prima delle azioni critiche, riducendo errori senza rinunciare alla velocità dell'automazione. Formato pratico e action-oriented, pensato per chi vuole implementare agenti AI in un business reale invece che in demo isolate.",
+    "key_message": "Un workflow di agenti AI production-ready richiede tagging dei task, verifica umana e loop di valutazione, non solo automazione pura.",
+    "bottom_line": "Blueprint diretto da applicare a operazioni interne o di clienti per portare agenti AI oltre la fase demo verso un uso affidabile in produzione."
+  },
+  "rbUFFMtKcaQ": {
+    "date": "2026-07-12",
+    "seen_on": "2026-07-14",
+    "type": "youtube",
+    "source": "Nick Saraev",
+    "title": "I Gave GPT-5.6-Sol Unlimited Money to Make Ads (+ Results)",
+    "url": "https://www.youtube.com/watch?v=rbUFFMtKcaQ",
+    "summary": "Nick Saraev testa un generatore di prodotti autonomo basato su GPT-5.6-Sol e Higgsfield, lasciandolo operare con budget illimitato per creare annunci pubblicitari. Il sistema genera oltre 80 prodotti in autonomia seguendo una pipeline a 4 step, dalla generazione dell'idea alla creazione dell'asset pubblicitario finale, con elaborazione in parallelo per velocizzare il processo. Saraev rende disponibile gratuitamente il setup completo, permettendo di replicare l'esperimento. Caso studio su quanto lontano si possa spingere l'autonomia di un agente AI nella generazione creativa e commerciale, misurando risultati concreti invece di limitarsi alla teoria.",
+    "key_message": "Un agente AI con budget illimitato può generare autonomamente decine di prodotti pubblicitari attraverso una pipeline a 4 step.",
+    "bottom_line": "Setup replicabile gratuitamente per chi vuole scalare la produzione di ads con agenti AI invece di team creativi umani."
+  },
+  "eFOTQpbGcy8": {
+    "date": "2026-07-14",
+    "seen_on": "2026-07-14",
+    "type": "youtube",
+    "source": "Nate Herk | AI Automation",
+    "title": "The $200K AI Job That Didn't Exist Last Year",
+    "url": "https://www.youtube.com/watch?v=eFOTQpbGcy8",
+    "summary": "Nate Herk analizza una nuova posizione lavorativa ad alto salario nell'ambito AI, emersa solo nell'ultimo anno e già richiesta a $200K. Il video propone una roadmap in quattro passi per posizionarsi su questo ruolo, spiegando come le aziende lo stiano costruendo internamente invece di assumere dall'esterno con profili tradizionali. Vengono citate statistiche di crescita della domanda (dal 26% al 76%) e paragoni con percorsi educativi classici, per mostrare come questo ruolo si stia affermando più velocemente delle credenziali formali. Taglio orientato a chi vuole riposizionare la propria carriera nell'AI capitalizzando su competenze pratiche.",
+    "key_message": "È nata una nuova figura professionale AI da $200K costruita internamente dalle aziende, non tramite assunzioni tradizionali.",
+    "bottom_line": "Roadmap utile per riposizionare la propria offerta di competenze AI verso ruoli emergenti ad alto valore invece che verso servizi commoditizzati."
+  },
+  "zyvdl__Ywfk": {
+    "date": "2026-07-12",
+    "seen_on": "2026-07-14",
+    "type": "youtube",
+    "source": "Nate Herk | AI Automation",
+    "title": "Claude Code + Clay Makes Lead Generation Actually Fun",
+    "url": "https://www.youtube.com/watch?v=zyvdl__Ywfk",
+    "summary": "Nate Herk mostra come integrare Claude Code con Clay per automatizzare la generazione di lead. Nel video genera 50 lead aziendali arricchiti con contenuti email personalizzati spendendo circa 12 dollari in crediti piattaforma. Il workflow copre il sourcing dei dati, la verifica degli indirizzi email, il setup della campagna di outreach e l'implementazione pratica per il cold outreach, mostrando ogni passaggio in modo replicabile. Esempio concreto di come un coding agent possa orchestrare uno strumento di prospecting come Clay per ottenere output di alta qualità a costo quasi nullo rispetto a un tool di lead gen tradizionale.",
+    "key_message": "Claude Code orchestrato con Clay genera lead arricchiti e personalizzati a una frazione del costo dei tool di lead gen tradizionali.",
+    "bottom_line": "Servizio facilmente vendibile a PMI e team sales che vogliono outreach personalizzato senza il costo di piattaforme enterprise."
+  },
+  "BDWdp_fIOHk": {
+    "date": "2026-07-13",
+    "seen_on": "2026-07-14",
+    "type": "youtube",
+    "source": "Matt Wolfe",
+    "title": "Build A Custom Browser Extension [SUPER Easy!]",
+    "url": "https://www.youtube.com/shorts/BDWdp_fIOHk",
+    "summary": "Matt Wolfe mostra come costruire un'estensione Chrome completamente funzionante in circa 10 minuti usando il modello GLM 5.2. Il video fornisce istruzioni passo passo per caricare l'estensione non pacchettizzata in Chrome, rendendo lo sviluppo di strumenti browser personalizzati accessibile anche a chi non ha esperienza di sviluppo. Contenuto breve in formato short, tipico dello stile di Wolfe per segnalare rapidamente strumenti e tecniche emergenti.",
+    "key_message": "Con GLM 5.2 si può costruire un'estensione Chrome funzionante in circa 10 minuti, senza competenze di sviluppo pregresse.",
+    "bottom_line": "Tecnica veloce da offrire come mini-servizio a clienti che vogliono tool custom leggeri senza investire in sviluppo tradizionale."
+  },
+  "deeOA6YVfqw": {
+    "date": "2026-07-12",
+    "seen_on": "2026-07-14",
+    "type": "youtube",
+    "source": "Cole Medin",
+    "title": "I Turned Claude Code Into a Complete Video Generation System (with Archon)",
+    "url": "https://www.youtube.com/watch?v=deeOA6YVfqw",
+    "summary": "Cole Medin trasforma Claude Code in una vera e propria \"AI marketing factory\", usando Archon e Higgsfield per generare automaticamente spot pubblicitari video completi. Medin sottolinea come un coding harness possa essere usato per molto più che scrivere codice, gestendo qualsiasi workflow agentico. Il video copre l'intero processo, dal setup iniziale alla scalabilità tramite workflow Archon, con dimostrazioni live della generazione video passo dopo passo, comprese timestamp che coprono ogni fase dalla configurazione alla revisione finale.",
+    "key_message": "Claude Code può diventare il motore di un intero sistema di generazione video pubblicitario, non solo un tool di coding.",
+    "bottom_line": "Blueprint per costruire un servizio di produzione video ads AI-native, vendibile a brand e agenzie che vogliono scalare senza team di produzione."
+  },
+  "https://nitter.net/sama/status/2076824870072238299#m": {
+    "date": "2026-07-14",
+    "seen_on": "2026-07-14",
+    "type": "twitter",
+    "source": "@sama",
+    "title": "hard questions are great but only if we deem you worthy enough to not silently downgrade you, or even get access at all",
+    "url": "https://nitter.net/sama/status/2076824870072238299#m"
+  },
+  "https://nitter.net/sama/status/2076824686307271125#m": {
+    "date": "2026-07-14",
+    "seen_on": "2026-07-14",
+    "type": "twitter",
+    "source": "@sama",
+    "title": "i thought this was satire, kept looking for the handle to be spelled c1audeai or something (in risposta al post di Claude su 'hard questions')",
+    "url": "https://nitter.net/sama/status/2076824686307271125#m"
+  },
+  "https://nitter.net/sama/status/2076823209589313910#m": {
+    "date": "2026-07-14",
+    "seen_on": "2026-07-14",
+    "type": "twitter",
+    "source": "@sama",
+    "title": "still sorta breaks my brain to see our models be good at design finally",
+    "url": "https://nitter.net/sama/status/2076823209589313910#m"
+  },
+  "https://nitter.net/sama/status/2076780425280954658#m": {
+    "date": "2026-07-13",
+    "seen_on": "2026-07-14",
+    "type": "twitter",
+    "source": "@sama",
+    "title": "come for the best model, stay because we don't treat you with contempt",
+    "url": "https://nitter.net/sama/status/2076780425280954658#m"
+  },
+  "https://nitter.net/nicksaraev/status/2076891096395993094#m": {
+    "date": "2026-07-14",
+    "seen_on": "2026-07-14",
+    "type": "twitter",
+    "source": "@nicksaraev",
+    "title": "Retweet di @0xROAS su Seedance 2.0 per la generazione video: 'Nice. Soon to be everywhere.'",
+    "url": "https://nitter.net/nicksaraev/status/2076891096395993094#m"
+  },
+  "https://nitter.net/nicksaraev/status/2076351540970094857#m": {
+    "date": "2026-07-12",
+    "seen_on": "2026-07-14",
+    "type": "twitter",
+    "source": "@nicksaraev",
+    "title": "Reazione positiva all'annuncio di accesso esteso di Claude AI",
+    "url": "https://nitter.net/nicksaraev/status/2076351540970094857#m"
+  },
+  "https://nitter.net/nicksaraev/status/2076338089195438174#m": {
+    "date": "2026-07-12",
+    "seen_on": "2026-07-14",
+    "type": "twitter",
+    "source": "@nicksaraev",
+    "title": "Commento sulla view di Satya Nadella secondo cui la valutazione (eval) è ora il vero collo di bottiglia dell'AI",
+    "url": "https://nitter.net/nicksaraev/status/2076338089195438174#m"
+  },
+  "https://nitter.net/nicksaraev/status/2076325419914306002#m": {
+    "date": "2026-07-12",
+    "seen_on": "2026-07-14",
+    "type": "twitter",
+    "source": "@nicksaraev",
+    "title": "Report sul ban di circa 45 commentatori generati da AI dalla community Maker Zero",
+    "url": "https://nitter.net/nicksaraev/status/2076325419914306002#m"
+  },
+  "https://nitter.net/nicksaraev/status/2076311513787457844#m": {
+    "date": "2026-07-12",
+    "seen_on": "2026-07-14",
+    "type": "twitter",
+    "source": "@nicksaraev",
+    "title": "Valutazione: 'Fable is far more intelligent than GPT-5.6-Sol'",
+    "url": "https://nitter.net/nicksaraev/status/2076311513787457844#m"
+  },
+  "https://nitter.net/nicksaraev/status/2076358909649166374#m": {
+    "date": "2026-07-12",
+    "seen_on": "2026-07-14",
+    "type": "twitter",
+    "source": "@nicksaraev",
+    "title": "Descrizione del workflow di task capture che integra iPhone shortcuts, Linear e agenti AI",
+    "url": "https://nitter.net/nicksaraev/status/2076358909649166374#m"
+  },
+  "https://www.anthropic.com/news/canadian-ai-research": {
+    "date": "2026-07-14",
+    "seen_on": "2026-07-14",
+    "type": "anthropic",
+    "source": "Anthropic",
+    "title": "Anthropic commits $10 million to Canadian AI research",
+    "url": "https://www.anthropic.com/news/canadian-ai-research",
+    "key_message": "Anthropic investe 10 milioni di dollari CAD in ricerca AI canadese attraverso partnership con otto istituzioni (tra cui Mila, Vector Institute, Amii); il Canada è ottavo al mondo per utilizzo di Claude con adozione pro capite superiore alle attese."
+  }
+}

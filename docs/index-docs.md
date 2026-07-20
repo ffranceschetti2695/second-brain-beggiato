@@ -4,7 +4,7 @@ summary: Documenti di riferimento, procedure e note operative personali.
 tags: [docs, index]
 status: active
 created: 2026-06-14
-updated: 2026-06-28
+updated: 2026-07-15
 related: ["[[index-self]]"]
 ---
 
@@ -20,3 +20,7 @@ Documenti di riferimento e procedure operative.
 - [[doc-launchd-automazioni-mac]] — Schedulare/triggerare automazioni locali su Mac con launchd (orario fisso, WatchPaths, vs cron)
 - [[doc-email-da-script-macos]] — Inviare email da script su Mac via Gmail SMTP (app-password + Keychain + fix certifi SSL)
 - [[doc-dashboard-telefono-screenshot-email]] — Portare una dashboard sul telefono via screenshot inline nell'email (Playwright), senza hosting
+- [[doc-tone-of-voice]] — Come scrivere i messaggi di lavoro per Francesco: corti, naturali, diretti, senza accondiscendenza ne' em dash
+- [[doc-company-brain-ingestion-horizons]] — Lookback configurati per ogni fonte del stuart-brain (Confluence per spazio, Slack/Drive/DWH da definire)
+- [[doc-mbr-next-steps-followup]] — Procedura mensile per chiedere update agli owner dei next steps MBR (skill `stuart-mbr-next-steps-followup`)
+- [[doc-bollette-tracking]] — Dove vive lo storico bollette (CSV) e come lo aggiorna la skill `/bills`

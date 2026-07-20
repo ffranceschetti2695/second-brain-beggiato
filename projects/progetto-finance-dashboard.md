@@ -4,8 +4,8 @@ summary: "Dashboard finanziaria personale + automazione locale giornaliera (Illi
 tags: [projects, finance, automation]
 status: active
 created: 2026-06-29
-updated: 2026-06-29
-related: ["[[progetto-ops-dashboard]]", "[[stato-stream-ai]]", "[[concetto-core-adapters-presentation]]", "[[concetto-automazione-local-first]]", "[[doc-accesso-dati-bancari]]", "[[doc-launchd-automazioni-mac]]", "[[doc-stuart-design-system]]"]
+updated: 2026-07-15
+related: ["[[progetto-ops-dashboard]]", "[[stato-stream-ai]]", "[[concetto-core-adapters-presentation]]", "[[concetto-automazione-local-first]]", "[[doc-accesso-dati-bancari]]", "[[doc-launchd-automazioni-mac]]", "[[doc-stuart-design-system]]", "[[doc-bollette-tracking]]"]
 ---
 
 # Progetto — Personal Finance Dashboard

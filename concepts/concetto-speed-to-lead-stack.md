@@ -31,4 +31,4 @@ Il server Node gira in un container Docker su una VPS Hostinger, dietro Traefik 
 
 ## Vedi anche
 
-[[progetto-speed-to-lead]] — [[concetto-claude-code-vs-api-billing]]
+[[progetto-speed-to-lead]] — [[concetto-claude-code-vs-api-billing]] — [[concetto-agent-skill-harness]]

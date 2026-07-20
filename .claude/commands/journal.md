@@ -1,157 +1,136 @@
 # Skill: journal
 
-Gestisce la memoria dinamica del Personal Brain. Quattro comandi:
-`inizia sessione` | `buongiorno` | `chiudi sessione` | `fine giornata`.
+Manages the Personal Brain's dynamic memory. Four commands:
+`start session` | `good morning` | `close session` | `end of day`.
 
-**TRIGGER OBBLIGATORIO — NON NEGOZIABILE:**
-Se l'utente dice "inizia sessione", "inizio sessione", "iniziamo una nuova sessione", "nuova sessione", "iniziamo la sessione" o "buongiorno", devi invocare questa skill con il tool `Skill` **PRIMA di qualsiasi altra azione o risposta**. Non puoi rispondere, non puoi leggere file, non puoi fare nulla prima di aver invocato la skill. Questo non è opzionale. Non ci sono eccezioni.
+**MANDATORY TRIGGER — NON-NEGOTIABLE:**
+If the user says "inizia sessione", "inizio sessione", "iniziamo una nuova sessione", "nuova sessione", "iniziamo la sessione", "buongiorno", "start session", "let's start a session", "new session", or "good morning", you must invoke this skill with the `Skill` tool **BEFORE any other action or response**. You cannot answer, cannot read files, cannot do anything before invoking the skill. This is not optional. There are no exceptions.
 
-Qualsiasi frase che segnali l'inizio di una sessione di lavoro — anche se formulata in modo diverso da quelle elencate — deve triggerare questa skill immediatamente.
-
----
-
-## Regole generali (applica sempre)
-
-- Date in formato `YYYY-MM-DD`, mai relative.
-- Usa solo [[wikilink]] a note che esistono gia' nel vault (verifica in `llms.txt`).
-- Non inventare entita': se non c'e' niente da agganciare, chiedi all'utente a cosa collegare la nota.
-- Italiano naturale, nessun m-dash.
-- Il frontmatter `related` e' sempre un array inline con ogni wikilink quotato:
-  `related: ["[[nota-a]]", "[[nota-b]]"]`
-- Il campo `summary` va tra virgolette doppie se contiene `:`.
+Any phrase that signals the start of a work session, even if phrased differently from the ones listed, must trigger this skill immediately.
 
 ---
 
-## Comando: `inizia sessione` (alias: `buongiorno`)
+## General rules (always apply)
 
-**Scopo:** briefing di inizio sessione. Non scrivere nulla nel vault.
-
-**Passi:**
-
-1. Leggi `llms.txt` per avere la mappa aggiornata delle entita'.
-2. Leggi l'ultima nota in `workspace/journal/sessions/` (quella col nome data piu' recente).
-   Se non esiste nessuna sessione, leggi `workspace/journal/daily/` per l'ultima nota daily.
-   Se non esiste neppure quella, di' che e' la prima sessione registrata.
-3. Rispondi con un **briefing strutturato in due sezioni**, leggendo la sezione "## Aperto" dell'ultima nota:
-
-   **Stuart**
-   - I prossimi step lavorativi confermati dall'utente alla chiusura della sessione precedente.
-   - Se la sezione Aperto non ha sottosezione Stuart, deduci dal contesto.
-
-   **Progetto AI / Monetizzazione**
-   - I prossimi step del progetto company brain / AI confermati dall'utente alla chiusura.
-   - Se la sezione Aperto non ha sottosezione AI, deduci dal contesto.
-
-   Niente inferenze extra, niente suggerimenti non richiesti. Riporta solo cio' che e' scritto nell'Aperto.
-4. Non creare file. Non chiedere conferma. Solo il briefing.
+- Dates in `YYYY-MM-DD` format, never relative.
+- Use only [[wikilinks]] to notes that already exist in the vault (check in `llms.txt`).
+- Do not invent entities: if there is nothing to link to, ask the user what to attach the note to.
+- Natural Italian, no em dash (this is the vault's content-writing convention, independent of the language of this chat).
+- The `related` frontmatter is always an inline array with each wikilink individually quoted:
+  `related: ["[[note-a]]", "[[note-b]]"]`
+- The `summary` field goes in double quotes if it contains a `:`.
 
 ---
 
-## Comando: `chiudi sessione`
+## Command: `start session` (alias: `good morning`)
 
-**Scopo:** scrivere la nota di sessione per la sessione corrente.
+**Purpose:** session-start briefing. Do not write anything to the vault.
 
-**Passi:**
+**Steps:**
 
-1. Guarda la conversazione corrente e deduci cosa e' stato fatto in questa sessione.
-2. In un unico messaggio, presenta:
-   - La sintesi in 3 righe di cosa abbiamo fatto (non chiedere conferma su questa parte).
-   - Subito sotto, la bozza della sezione **## Aperto** strutturata in due workstream:
-   ```
-   ## Aperto
+1. Read `llms.txt` for the up-to-date map of entities.
+2. Read `workspace/journal/open-items.md` — it is the source of truth for open steps.
+   If the file doesn't exist, read the latest note in `workspace/journal/sessions/` as a fallback.
+3. Reply with a **briefing per workstream**, reporting the items exactly as written in the file, grouped by section (Stuart, AI / Company Brain, Finance Dashboard, AI Frontiera, Vault / Tooling).
+   No extra inference, no unsolicited suggestions.
+4. Reply in the language the user wrote their session-start message in.
+5. Do not create files. Do not ask for confirmation. Just the briefing.
 
-   ### Stuart
-   - <prossimo step lavorativo Stuart, se presente>
+---
 
-   ### Progetto AI / Monetizzazione
-   - <prossimo step progetto company brain / AI, se presente>
-   ```
-   Poi chiedi esplicitamente: "Questi sono i prossimi passi che ti mostrero' all'inizio della prossima sessione. Vanno bene o vuoi aggiungere, togliere o riformulare qualcosa?"
-   Aspetta la risposta e applica le modifiche richieste. Non chiedere una seconda conferma.
-3. Scrivi il file con l'Aperto confermato:
-   - **Percorso:** `workspace/journal/sessions/sessione-<YYYY-MM-DD>.md`
-     dove `<YYYY-MM-DD>` e' la data di oggi.
-   - Se esiste gia' un file con quel nome (piu' sessioni nello stesso giorno),
-     aggiungi un suffisso: `sessione-<YYYY-MM-DD>-b.md`, `sessione-<YYYY-MM-DD>-c.md`, ecc.
-5. **Frontmatter:**
+## Command: `close session`
+
+**Purpose:** write the session note for the current session.
+
+**Steps (ONE confirmation in the whole flow, not two):**
+
+1. Look at the current conversation and infer what was done in this session, and what new open steps emerged (only the new ones, not all open items).
+2. Read `workspace/journal/open-items.md`. Autonomously infer, from the conversation context, what should be **Removed** (items completed in this session) and what should be **Added** (the new steps from point 1) — don't ask the user to list them, propose them yourself.
+3. In a **single message** present everything together, without splitting into multiple rounds:
+   - The 3-line summary of what we did.
+   - **Removing** / **Adding** (if there's nothing to change, just write "no changes to open items" and skip the rest of this point).
+   - The **full updated list** of open items per workstream (only if there are changes to review; if there are none, no need to repeat it).
+   - Close with a single question only if there's something to review: "Confirm, or should I change something?" — if no changes are proposed, ask no question, go straight to step 4.
+4. Wait for the reply (if a question was asked) and apply everything in one shot, including updating `open-items.md` (`updated` field = today's date). Do not ask for a second confirmation on any detail: if the user corrects something, apply the correction and move on, don't ask "confirm?" a second time.
+5. Write the file with the confirmed Open items:
+   - **Path:** `workspace/journal/sessions/sessione-<YYYY-MM-DD>.md`
+     where `<YYYY-MM-DD>` is today's date. (Keep the Italian filename stem `sessione-` — this matches the existing files in the vault, do not rename to `session-`.)
+   - If a file with that name already exists (multiple sessions on the same day),
+     add a suffix: `sessione-<YYYY-MM-DD>-b.md`, `sessione-<YYYY-MM-DD>-c.md`, etc.
+6. **Frontmatter:**
    ```yaml
    ---
    title: "Sessione <YYYY-MM-DD>"
-   summary: "<Una frase su cosa abbiamo fatto>"
+   summary: "<One sentence on what we did>"
    tags: [workspace, type/session]
    status: done
    created: <YYYY-MM-DD>
    updated: <YYYY-MM-DD>
-   related: ["[[<entita-1>]]", "[[<entita-2>]]"]
+   related: ["[[<entity-1>]]", "[[<entity-2>]]"]
    ---
    ```
-   Il campo `related` deve contenere [[wikilink]] alle note toccate durante la sessione.
-   Sceglile da `llms.txt`. Se non riesci a identificarne nessuna, chiedi all'utente.
-6. **Corpo:**
+   The `related` field must contain [[wikilinks]] to the notes touched during the session.
+   Pick them from `llms.txt`. If you can't identify any, ask the user.
+7. **Body** (keep these Italian section headers — `Fatto`/`Deciso`/`Aperto` — to match the vault's existing convention):
    ```
    ## Fatto
-   <Cosa abbiamo concluso.>
+   <What we concluded.>
 
    ## Deciso
-   <Le scelte prese e il perche'.>
+   <The choices made and why.>
 
    ## Aperto
-
-   ### Stuart
-   - <prossimi step Stuart confermati dall'utente>
-
-   ### Progetto AI / Monetizzazione
-   - <prossimi step AI/monetizzazione confermati dall'utente>
+   <new steps that emerged in this session, confirmed by the user — only the new ones>
    ```
-7. Dopo aver scritto, conferma il percorso del file creato.
+8. After writing, confirm the path of the file created.
 
 ---
 
-## Comando: `fine giornata`
+## Command: `end of day`
 
-**Scopo:** scrivere il daily che fonde tutte le sessioni del giorno.
+**Purpose:** write the daily note that merges all of the day's sessions.
 
-**Passi:**
+**Steps:**
 
-1. Leggi **tutte** le note `workspace/journal/sessions/sessione-<data-di-oggi>*.md`.
-2. **Prima di scrivere**, di' in 3 righe cosa hai capito che e' successo oggi in totale.
-   Aspetta l'ok dell'utente.
-3. Dopo l'ok, scrivi il file:
-   - **Percorso:** `workspace/journal/daily/<YYYY-MM-DD>.md`
+1. Read **all** `workspace/journal/sessions/sessione-<today's-date>*.md` notes.
+2. **Before writing**, state in 3 lines what you understood happened today overall.
+   Wait for the user's ok.
+3. After the ok, write the file:
+   - **Path:** `workspace/journal/daily/<YYYY-MM-DD>.md`
 4. **Frontmatter:**
    ```yaml
    ---
    title: "Daily <YYYY-MM-DD>"
-   summary: "<Una frase: il filo conduttore della giornata>"
+   summary: "<One sentence: the day's throughline>"
    tags: [workspace, type/daily]
    status: done
    created: <YYYY-MM-DD>
    updated: <YYYY-MM-DD>
-   related: ["[[sessione-<YYYY-MM-DD>]]", "[[<entita-principale-1>]]", "[[<entita-principale-2>]]"]
+   related: ["[[sessione-<YYYY-MM-DD>]]", "[[<main-entity-1>]]", "[[<main-entity-2>]]"]
    ---
    ```
-   Il `related` include i [[wikilink]] a tutte le sessioni del giorno + le entita' statiche principali toccate.
-5. **Corpo:**
+   The `related` field includes [[wikilinks]] to all of the day's sessions plus the main static entities touched.
+5. **Body** (keep these Italian section headers, same reason as above):
    ```
    ## Fatto
-   <Sintesi della giornata: cosa e' stato concluso. Fondi le sessioni senza ripeterle riga per riga.>
+   <Summary of the day: what was concluded. Merge the sessions without repeating them line by line.>
 
    ## Deciso
-   <Le scelte prese durante la giornata e il loro perche'.>
+   <The choices made during the day and their reasoning.>
 
    ## Aperto
-   <Tutto cio' che resta in sospeso all'uscita dalla giornata.>
+   <Everything left pending at the end of the day.>
 
    ## Sessioni
    - [[sessione-<YYYY-MM-DD>]]
-   - [[sessione-<YYYY-MM-DD>-b]]   ← solo se esistono sessioni aggiuntive
+   - [[sessione-<YYYY-MM-DD>-b]]   ← only if additional sessions exist
    ```
-6. Dopo aver scritto, conferma il percorso del file creato.
+6. After writing, confirm the path of the file created.
 
 ---
 
-## Template di riferimento
+## Reference templates
 
-I template riusabili sono in:
+The reusable templates are in:
 - `workspace/journal/_templates/template-sessione.md`
 - `workspace/journal/_templates/template-daily.md`
